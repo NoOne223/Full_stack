@@ -1,3 +1,5 @@
+import Body from '@/components/body/Body';
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
 import { Metadata } from 'next'; //Import để thay đổi <title>
 
@@ -13,11 +15,8 @@ export default function Home() { //Sử dụng cho các trang chính
   return (
     <div>
       <Header />
-      <section>
-        <div className='container m-auto'>
-          <h1 className='uppercase text-title font-bold'>"We bring you quality home furnishings and the finest designs for your home."</h1>
-        </div>
-      </section>
+      <Body />
+      <Footer />
     </div>
   );
 }
