@@ -3,6 +3,8 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => { //Sử dụng cho các component
   const pathname = usePathname()
@@ -18,16 +20,16 @@ const Header = () => { //Sử dụng cho các component
                 </div>
                 <ul className='flex'>
                     <li className='p-4'>
-                      <Link className={`link p-3 ${pathname === '/' ? 'active' : ''}`} href=''>Home</Link>
+                      <Link className={`link p-3 ${pathname === '/' ? 'active' : ''}`} href='/'>Home</Link>
                     </li>
                     <li className='p-4'>
-                      <Link className={`link p-3  ${pathname === '' ? 'active' : ''}`} href=''>Products</Link>
+                      <Link className={`link p-3  ${pathname === '' ? 'active' : ''}`} href='/Product'>Products</Link>
                     </li>
                     <li className='p-4'>
                       <Link className={`link p-3  ${pathname === '' ? 'active' : ''}`} href=''>Services</Link>
                     </li>
                     <li className='p-4'>
-                      <Link className={`link p-3  ${pathname === '' ? 'active' : ''}`} href=''><i className="fa-solid fa-cart-shopping"></i></Link>
+                      <Link className={`link p-3  ${pathname === '' ? 'active' : ''}`} href=''><FontAwesomeIcon icon={faCartShopping} /></Link>
                     </li>
                 </ul>
             </div>
