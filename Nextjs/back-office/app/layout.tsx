@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
-import "./globals.css";
+import '../styles/globals.css'; // Đảm bảo đường dẫn chính xác
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
