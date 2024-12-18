@@ -119,8 +119,7 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <FontAwesomeIcon icon={faSquareFacebook} />
-                        <Link href='https://coolors.co/palettes/popular/turquoise' passHref>
-                            <a target='_blank'></a>
+                        <Link href='https://coolors.co/palettes/popular/turquoise' target="_blank">
                         </Link>
                     </li>
                     <li>
