@@ -13,7 +13,10 @@ export default {
         foreground: "var(--foreground)",
         'color-1': "#469d89",
         'color-2': "#14746f",
-        // background: "var(--background)",
+        'fade-black' : 'rgba(0, 0, 0, 0.5)',
+      },
+      boxShadow: {
+        'only-left' : '0px 0px 5px rgba(0, 0, 0, 0.5)',
       },
     },
     container:{
