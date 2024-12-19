@@ -1,7 +1,9 @@
 import SecondaryButton from '@/components/Button/SecondaryButton';
+import Footer from '@/components/Footer/Footer';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import type { Metadata } from 'next'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Homepage',
@@ -83,7 +85,53 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='section4'>
+      <section className='min-h-screen' id='section4'>
+        <div className='relative w-full h-full'>
+          <Image className='w-full h-full max-h-screen object-cover' src='/images/hiring-banner.jpg' width={500} height={500} alt='Banner'/>
+          <div className='bg-fade-black absolute top-0 left-0 w-full h-full'>
+            <div className='container mx-auto p-[10px] text-white flex flex-col justify-center h-full'>
+              <h2 className='text-4xl uppercase font-extrabold'>Join us</h2>
+              <p className='my-2'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos aperiam id. Odit, maxime quis totam itaque tempore impedit voluptatem sequi nulla 
+                laboriosam ducimus dignissimos nobis tempora temporibus. Nobis, aliquam!
+              </p>
+              <div className='flex gap-x-4'>
+                <div className='border border-white rounded-md p-3 flex-auto'>
+                  <h4 className='text-2xl font-bold'>Benefit 1</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
+                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
+                  </p>
+                </div>
+                <div className='border border-white rounded-md p-3 flex-auto'>
+                  <h4 className='text-2xl font-bold'>Benefit 2</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
+                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
+                  </p>
+                </div>
+                <div className='border border-white rounded-md p-3 flex-auto'>
+                  <h4 className='text-2xl font-bold'>Benefit 3</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
+                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
+                  </p>
+                </div>
+                <div className='border border-white rounded-md p-3 flex-auto'>
+                  <h4 className='text-2xl font-bold'>Benefit 4</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
+                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
+                  </p>
+                </div>
+              </div>
+              <Link href=''/>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+      <section className='my-10' id='section5'>
         <div className='container mx-auto p-[10px]'>
           <div className='text-center'>
             <h2 className='text-4xl uppercase font-extrabold text-color-2'>Compliment</h2>
@@ -123,6 +171,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

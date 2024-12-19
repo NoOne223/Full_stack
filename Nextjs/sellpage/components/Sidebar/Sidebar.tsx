@@ -7,14 +7,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import SidebarButton from '../Button/SidebarButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faSquareFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
 
+  const [isOpen, setIsOpen] = useState(false);
   const toggleSidebar = () => setIsOpen(!isOpen);
+
+  const [showUp, setShowUp] = useState(false);
+  const showupToogle = () => setShowUp(!showUp)
 
   // Ngăn body scroll khi mở sidebar
   useEffect(() => {
@@ -100,30 +102,39 @@ const Sidebar = () => {
               </li>
             </ul>
           </nav>
-          <div className="block">
+          <div className="block relative z-10">
             <button
-              className="p-2 inline-block w-1/2 text-center hover:bg-color-2 hover:text-white"
+              className="p-2 inline-block w-1/2 bg-white text-center hover:bg-color-2 hover:text-white"
             >
               Account
             </button>
             <button
-              className="p-2 inline-block w-1/2 text-center hover:bg-color-2 hover:text-white"
+              onClick={showupToogle}
+              className="p-2 inline-block w-1/2 bg-white text-center hover:bg-color-2 hover:text-white"
             >
               Contact
             </button>
-            <div>
+            <div className={`p-2 absolute -top-[150px] shadow-top w-full left-0 bg-white -z-10 transition-all duration-500 ${showUp ? '-top-[195px]' : 'top-0'}`}>
                 <ul>
-                    <li>
-                        <FontAwesomeIcon icon={faPhone} />
-                        <a href='tel:0982582754'>0982582754</a>
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faSquareFacebook} />
-                        <Link href='https://coolors.co/palettes/popular/turquoise' target="_blank">
+                    <li className='py-2'>
+                        <Link className='hover:text-color-2' href='' target="_blank">
+                        <FontAwesomeIcon className='me-2' icon={faYoutube} />Youtube
                         </Link>
                     </li>
-                    <li>
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <li className='py-2'>
+                        <Link className='hover:text-color-2' href='' target="_blank">
+                        <FontAwesomeIcon className='me-2' icon={faLinkedin} />Linkedin
+                        </Link>
+                    </li>
+                    <li className='py-2'>
+                        <Link className='hover:text-color-2' href='' target="_blank">
+                        <FontAwesomeIcon className='me-2' icon={faSquareFacebook} />Facebook
+                        </Link>
+                    </li>
+                    <li className='py-2'>
+                      <Link className='hover:text-color-2' href='' target="_blank">
+                      <FontAwesomeIcon className='me-2' icon={faInstagram} />Instagram
+                      </Link>
                     </li>
                 </ul>
             </div>

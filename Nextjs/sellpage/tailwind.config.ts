@@ -17,6 +17,7 @@ export default {
       },
       boxShadow: {
         'only-left' : '0px 0px 5px rgba(0, 0, 0, 0.5)',
+        'top' : '0px -2px 5px rgba(0, 0, 0, 0.5)',
       },
     },
     container:{
