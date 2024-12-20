@@ -11,7 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'color-1': "#469d89",
+        'color-1': "#22577a",
         'color-2': "#14746f",
         'fade-black' : 'rgba(0, 0, 0, 0.5)',
       },

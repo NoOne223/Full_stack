@@ -1,5 +1,6 @@
 import SecondaryButton from '@/components/Button/SecondaryButton';
 import Footer from '@/components/Footer/Footer';
+import AccountModal from '@/components/Modals/AccountModal';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import type { Metadata } from 'next'
 import Image from 'next/image';
@@ -17,7 +18,7 @@ export default function Home() {
         <div className='w-full h-full flex flex-col justify-center items-center text-center gap-y-14'>
           <Image className='' src='/images/logo.png' width={500} height={500} alt='Logo page'/>
           <h1 className='uppercase max-w-6xl text-4xl font-extrabold text-color-2'>Everything you need to build, design, and manage your website effortlessly</h1>
-          <SecondaryButton>start exploring</SecondaryButton>
+          <SecondaryButton className=''>start exploring</SecondaryButton>
         </div>
       </section>
 
@@ -86,47 +87,47 @@ export default function Home() {
       </section>
 
       <section className='min-h-screen' id='section4'>
-        <div className='relative w-full h-full'>
-          <Image className='w-full h-full max-h-screen object-cover' src='/images/hiring-banner.jpg' width={500} height={500} alt='Banner'/>
-          <div className='bg-fade-black absolute top-0 left-0 w-full h-full'>
-            <div className='container mx-auto p-[10px] text-white flex flex-col justify-center h-full'>
-              <h2 className='text-4xl uppercase font-extrabold'>Join us</h2>
-              <p className='my-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos aperiam id. Odit, maxime quis totam itaque tempore impedit voluptatem sequi nulla 
-                laboriosam ducimus dignissimos nobis tempora temporibus. Nobis, aliquam!
-              </p>
-              <div className='flex gap-x-4'>
-                <div className='border border-white rounded-md p-3 flex-auto'>
-                  <h4 className='text-2xl font-bold'>Benefit 1</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
-                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
-                  </p>
-                </div>
-                <div className='border border-white rounded-md p-3 flex-auto'>
-                  <h4 className='text-2xl font-bold'>Benefit 2</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
-                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
-                  </p>
-                </div>
-                <div className='border border-white rounded-md p-3 flex-auto'>
-                  <h4 className='text-2xl font-bold'>Benefit 3</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
-                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
-                  </p>
-                </div>
-                <div className='border border-white rounded-md p-3 flex-auto'>
-                  <h4 className='text-2xl font-bold'>Benefit 4</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur et quas suscipit illum nesciunt, reprehenderit blanditiis doloribus, laborum pariatur 
-                    delectus necessitatibus voluptate, libero maiores. Laudantium placeat commodi hic aspernatur.
-                  </p>
-                </div>
+        <div className='relative w-full h-full flex'>
+          <Image className='w-full max-w-xl h-full max-h-screen object-cover' src='/images/hiring.jpg' width={500} height={500} alt='Banner'/>
+          <div className='bg-color-1 text-white flex-auto flex justify-center flex-col p-5 gap-y-5'>
+            <h2 className='uppercase text-4xl font-extrabold text-center'>Join us</h2>
+            <p className='text-center'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta saepe labore inventore assumenda quas officia laudantium? Sapiente culpa qui 
+              temporibus dolor debitis distinctio officiis voluptate, quibusdam ullam consequuntur dolorum officia.
+            </p>
+            <div className='flex gap-5 flex-wrap'>
+              <div className='flex-auto max-w-[49%] p-3 border border-white rounded-md'>
+                <h4 className='text-2xl font-bold'>Benifit 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis est ducimus, id quas temporibus, optio ad neque magnam 
+                  ipsum quos accusantium voluptates laudantium quisquam sapiente architecto delectus nostrum? Provident.
+                </p>
               </div>
-              <Link href=''/>
+              <div className='flex-auto max-w-[49%] p-3 border border-white rounded-md'>
+                <h4 className='text-2xl font-bold'>Benifit 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis est ducimus, id quas temporibus, optio ad neque magnam 
+                  ipsum quos accusantium voluptates laudantium quisquam sapiente architecto delectus nostrum? Provident.
+                </p>
+              </div>
+              <div className='flex-auto max-w-[49%] p-3 border border-white rounded-md'>
+                <h4 className='text-2xl font-bold'>Benifit 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis est ducimus, id quas temporibus, optio ad neque magnam 
+                  ipsum quos accusantium voluptates laudantium quisquam sapiente architecto delectus nostrum? Provident.
+                </p>
+              </div>
+              <div className='flex-auto max-w-[49%] p-3 border border-white rounded-md'>
+                <h4 className='text-2xl font-bold'>Benifit 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis est ducimus, id quas temporibus, optio ad neque magnam 
+                  ipsum quos accusantium voluptates laudantium quisquam sapiente architecto delectus nostrum? Provident.
+                </p>
+              </div>
             </div>
+            <Link className='w-fit mx-auto' href='/join'>
+              <SecondaryButton className=''>Join now !</SecondaryButton>
+            </Link>
           </div>
         </div>
       </section>  
@@ -172,6 +173,7 @@ export default function Home() {
         </div>
       </section>
       <Footer />
+      <AccountModal />
     </>
   );
 }

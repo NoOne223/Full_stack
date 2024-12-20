@@ -100,6 +100,16 @@ const Sidebar = () => {
                   Transaction history
                 </Link>
               </li>
+              <li className="hover:bg-color-2 hover:text-white mb-7">
+                <Link
+                  className={`p-4 block font-bold ${
+                    pathname === '/join' ? 'active' : ''
+                  }`}
+                  href="/transaction"
+                >
+                  Join our company
+                </Link>
+              </li>
             </ul>
           </nav>
           <div className="block relative z-10">
