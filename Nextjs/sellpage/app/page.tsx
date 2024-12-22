@@ -1,6 +1,5 @@
 import SecondaryButton from '@/components/Button/SecondaryButton';
 import Footer from '@/components/Footer/Footer';
-import AccountModal from '@/components/Modals/AccountModal';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import type { Metadata } from 'next'
 import Image from 'next/image';
@@ -173,7 +172,6 @@ export default function Home() {
         </div>
       </section>
       <Footer />
-      <AccountModal />
     </>
   );
 }

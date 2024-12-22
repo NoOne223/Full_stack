@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import SidebarButton from '../Button/SidebarButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faSquareFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import SigninModal from '../Modals/SigninModal';
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -17,6 +18,11 @@ const Sidebar = () => {
 
   const [showUp, setShowUp] = useState(false);
   const showupToogle = () => setShowUp(!showUp)
+
+  const [isModalOpen, setModalOpen] = useState(false);
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
 
   // Ngăn body scroll khi mở sidebar
   useEffect(() => {
@@ -36,7 +42,9 @@ const Sidebar = () => {
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40"
-          onClick={() => setIsOpen(false)} // Đóng sidebar khi nhấp vào overlay
+          onClick={() => {
+            setIsOpen(false);
+          }}// Đóng sidebar khi nhấp vào overlay
         ></div>
       )}
 
@@ -115,6 +123,8 @@ const Sidebar = () => {
           <div className="block relative z-10">
             <button
               className="p-2 inline-block w-1/2 bg-white text-center hover:bg-color-2 hover:text-white"
+              onClick={openModal}
+              aria-expanded={isOpen}
             >
               Account
             </button>
@@ -152,6 +162,7 @@ const Sidebar = () => {
           <SidebarButton isOpen={isOpen} toggleSidebar={toggleSidebar} />
         </div>
       </div>
+      <SigninModal className={`transition-all duration-500 scale-y-0 ${isOpen ? 'scale-y-100' : ''}`} isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 };

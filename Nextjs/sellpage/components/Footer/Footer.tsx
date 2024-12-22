@@ -8,14 +8,15 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer>
-        <div className='footer-banner mt-10 pt-10'>
+        <div className='footer-banner mt-10 py-52'>
           <div className='container mx-auto p-[10px] text-white'>
             <div className=' max-w-3xl ml-auto'>
               <h2 className='text-4xl font-extrabold'>If you have anything to ask, please fill this form</h2>
               <FooterForm />
             </div>
           </div>
-          <div className='bg-white mt-10 py-3'>
+        </div>
+        <div className='bg-white mt-10 py-3'>
             <div className='container mx-auto p-[10px] flex gap-x-5'>
               <div className='max-w-96'>
                 <h2 className='text-2xl font-extrabold'>Branch 1</h2>
@@ -51,7 +52,6 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-          </div>
         </div>
     </footer>
   )
