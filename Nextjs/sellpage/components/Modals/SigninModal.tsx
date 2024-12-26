@@ -1,52 +1,72 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import SecondaryButton from '../Button/SecondaryButton';
-import CancelButton from '../Button/CancelButton';
-import PasswordInput from '../ControlPass/PasswordInput';
+import React, { useState } from 'react'
+import './modal.css'
+import PasswordInput from '../ControlPass/PasswordInput'
+import SecondaryButton from '../Button/SecondaryButton'
 
-interface SigninModalProps {
-  isOpen: boolean; // Trạng thái mở/đóng modal
-  onClose: () => void; // Hàm đóng modal
-  className: string;
+interface SigninModalProps{
+  className?: string;
+  toggleSigninup: () => void;
+  onForgotPasswordClick: () => void;
 }
+const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, onForgotPasswordClick }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
+  
+  const handleSignIn = async () => {
+    try {
+      // Fetch dữ liệu từ userdata.json
+      const response = await fetch('/example_data/userdata.json');
+      const data = await response.json();
 
-const SigninModal: React.FC<SigninModalProps> = ({ isOpen, onClose, className }) => {
-  if (!isOpen) return null;
+      // Kiểm tra username và password
+      const user = data.users.find(
+        (user: { username: string; password: string }) =>
+          user.username === username && user.password === password
+      );
+
+      if (user) {
+        alert(`Welcome back, ${user.account_name}!`);
+        setError(false);
+        // Thực hiện các hành động tiếp theo như chuyển hướng
+      } else {
+        setError(true); // Hiển thị thông báo lỗi
+      }
+    } catch (err) {
+      console.error('Error fetching user data:', err);
+    }
+  };
 
   return (
-    <div className={`max-w-[900px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 bg-white rounded-xl z-40 shadow-only-left ${className}`}>
-      <Image className='rounded-full h-[150px] object-contain w-fit mx-auto' src='/images/boy.png' width={500} height={500} alt='Avatar'/>
-      <h2 className='font-extrabold text-4xl my-4 text-center'>User Account</h2>
-      <div className='mb-3'>
-          <label className='text-base'>User name</label>
-          <input className='w-full py-1 px-2 border border-black rounded focus:outline-color-1' type='text'></input>
-      </div>
-      <div className='mb-3'>
-          <label className='text-base'>Password</label>
-          <PasswordInput />
-      </div>
-      <div className='mb-3'>
-          <button className='text-base text-color-2'>Forgot Password?</button>
-          <Link className='text-base text-color-2 float-end' href='/signup'>Sign up</Link>
-      </div>
-      <div className='mb-3'>
-          <SecondaryButton className='w-full hover:bg-color-1'>Sign In</SecondaryButton>
-          <CancelButton onClick={onClose} className='w-full mt-3'>Cancel</CancelButton>
-      </div>
-      <p className='text-center'>Or</p>
+    <div className={`max-w-2xl w-full bg-white shadow-only-left rounded-xl p-5 ${className}`}>
+      <h2 className='text-4xl font-extrabold text-center'>Sign in</h2>
+      {error && <p className='mt-3 text-red-600'>The Username or Password isn't correct!</p>}
       <div className='mt-3'>
-          <button className='flex items-center justify-center w-full gap-x-2 border rounded-full py-1 hover:border-gray-300 border-transparent'>
-              <Image className='max-h-4 object-contain w-fit' src='/images/google.png' width={500} height={500} alt='Login icon'/>
-              <p className='min-w-[275px] text-start'>Sign in with Google account !</p>
-          </button>
-          <button className='flex items-center justify-center w-full gap-x-2 border rounded-full py-1 hover:border-gray-300 border-transparent mt-2'>
-              <Image className='max-h-4 object-contain w-fit' src='/images/facebook.png' width={500} height={500} alt='Login icon'/>
-              <p>Sign in with Facebook account !</p>
-          </button>
+        <label className='text-base'>Username</label>
+        <input 
+          className='w-full border border-black rounded focus:outline-color-1 p-1 mt-1' 
+          type="text" 
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
       </div>
+      <div className='mt-3'>
+        <label className='text-base'>Password</label>
+        <PasswordInput value={password} onChange={(e) => setPassword(e.target.value)} />
+      </div>
+      <div className='mt-3'>
+        <label className="custom-checkbox block relative pl-5 cursor-pointer w-fit select-none">Remember me
+          <input className='checkbox absolute opacity-0 cursor-pointer h-0 w-0 peer' type="checkbox" />
+          <span className="checkmark absolute top-[5px] left-0 h-4 w-4 border border-black rounded-sm"></span>
+        </label>
+      </div>
+      <div className='mt-3'>
+        <button className='text-color-2' onClick={onForgotPasswordClick}>Forgot Password?</button>
+      </div>
+      <SecondaryButton onClick={handleSignIn} type='submit' className='hover:bg-color-1 w-full mt-3'>Sign in</SecondaryButton>
+      <p className='mt-3 text-center'>Don't have account? <button className='text-color-2' onClick={toggleSigninup}>Sign up now</button></p>
     </div>
-  );
-};
+  )
+}
 
-export default SigninModal;
+export default SigninModal

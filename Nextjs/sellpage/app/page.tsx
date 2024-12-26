@@ -17,7 +17,7 @@ export default function Home() {
         <div className='w-full h-full flex flex-col justify-center items-center text-center gap-y-14'>
           <Image className='' src='/images/logo.png' width={500} height={500} alt='Logo page'/>
           <h1 className='uppercase max-w-6xl text-4xl font-extrabold text-color-2'>Everything you need to build, design, and manage your website effortlessly</h1>
-          <SecondaryButton className=''>start exploring</SecondaryButton>
+          <SecondaryButton type='button' className=''>start exploring</SecondaryButton>
         </div>
       </section>
 
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='min-h-screen' id='section4'>
+      <section className='min-h-screen my-16' id='section4'>
         <div className='relative w-full h-full flex'>
           <Image className='w-full max-w-xl h-full max-h-screen object-cover' src='/images/hiring.jpg' width={500} height={500} alt='Banner'/>
           <div className='bg-color-1 text-white flex-auto flex justify-center flex-col p-5 gap-y-5'>
@@ -125,13 +125,13 @@ export default function Home() {
               </div>
             </div>
             <Link className='w-fit mx-auto' href='/join'>
-              <SecondaryButton className=''>Join now !</SecondaryButton>
+              <SecondaryButton type='button' className=''>Join now !</SecondaryButton>
             </Link>
           </div>
         </div>
       </section>  
 
-      <section className='my-10' id='section5'>
+      <section className='my-16' id='section5'>
         <div className='container mx-auto p-[10px]'>
           <div className='text-center'>
             <h2 className='text-4xl uppercase font-extrabold text-color-2'>Compliment</h2>

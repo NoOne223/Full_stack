@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 import SidebarButton from '../Button/SidebarButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faSquareFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import SigninModal from '../Modals/SigninModal';
+import NoticeAccount from '../Modals/NoticeAccount';
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -44,13 +44,14 @@ const Sidebar = () => {
           className="fixed inset-0 bg-black bg-opacity-50 z-40"
           onClick={() => {
             setIsOpen(false);
+            setModalOpen(false)
           }}// Đóng sidebar khi nhấp vào overlay
         ></div>
       )}
 
       {/* Sidebar */}
       <div
-        className={`fixed shadow-only-left pt-7 bg-white max-w-64 h-full z-50 transition-all duration-500 ${
+        className={`fixed top-0 shadow-only-left pt-7 bg-white max-w-64 h-full z-50 transition-all duration-500 ${
           isOpen ? 'right-0' : '-right-[260px]'
         }`}
       >
@@ -70,7 +71,7 @@ const Sidebar = () => {
             <ul>
               <li className="hover:bg-color-2 hover:text-white mb-7">
                 <Link
-                  className={`p-4 block font-bold ${
+                  className={`p-4 block  ${
                     pathname === '/' ? 'bg-color-2 text-white' : ''
                   }`}
                   href="/"
@@ -80,8 +81,8 @@ const Sidebar = () => {
               </li>
               <li className="hover:bg-color-2 hover:text-white mb-7">
                 <Link
-                  className={`p-4 block font-bold ${
-                    pathname === '/templates' ? 'active' : ''
+                  className={`p-4 block  ${
+                    pathname === '/templates' ? 'bg-color-2 text-white' : ''
                   }`}
                   href="/templates"
                 >
@@ -90,7 +91,7 @@ const Sidebar = () => {
               </li>
               <li className="hover:bg-color-2 hover:text-white mb-7">
                 <Link
-                  className={`p-4 block font-bold ${
+                  className={`p-4 block  ${
                     pathname === '/favorite' ? 'active' : ''
                   }`}
                   href="/favorite"
@@ -100,7 +101,7 @@ const Sidebar = () => {
               </li>
               <li className="hover:bg-color-2 hover:text-white mb-7">
                 <Link
-                  className={`p-4 block font-bold ${
+                  className={`p-4 block  ${
                     pathname === '/transaction' ? 'active' : ''
                   }`}
                   href="/transaction"
@@ -110,7 +111,7 @@ const Sidebar = () => {
               </li>
               <li className="hover:bg-color-2 hover:text-white mb-7">
                 <Link
-                  className={`p-4 block font-bold ${
+                  className={`p-4 block  ${
                     pathname === '/join' ? 'active' : ''
                   }`}
                   href="/transaction"
@@ -124,7 +125,7 @@ const Sidebar = () => {
             <button
               className="p-2 inline-block w-1/2 bg-white text-center hover:bg-color-2 hover:text-white"
               onClick={openModal}
-              aria-expanded={isOpen}
+              aria-expanded={isModalOpen}
             >
               Account
             </button>
@@ -162,7 +163,7 @@ const Sidebar = () => {
           <SidebarButton isOpen={isOpen} toggleSidebar={toggleSidebar} />
         </div>
       </div>
-      <SigninModal className={`transition-all duration-500 scale-y-0 ${isOpen ? 'scale-y-100' : ''}`} isOpen={isModalOpen} onClose={closeModal} />
+      <NoticeAccount className={`transition-all duration-500 ${isModalOpen ? 'scale-100' : 'scale-0'}`} isModalOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 };

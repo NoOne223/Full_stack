@@ -7,7 +7,11 @@ import dynamic from 'next/dynamic';
 const FontAwesomeIcon = dynamic(() => import('@fortawesome/react-fontawesome').then(mod => mod.FontAwesomeIcon), { ssr: false });
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
-const PasswordInput = () => {
+interface PasswordInputProps{
+    value: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+const PasswordInput:React.FC<PasswordInputProps> = ({ value, onChange }) => {
     const [showPassword, setShowPassword] = useState(false);
 
     const toggleShowpassword = () => {
@@ -17,8 +21,10 @@ const PasswordInput = () => {
     return (
         <div className="relative">
             <input
-                className="w-full py-1 px-2 border border-black rounded focus:outline-color-1"
+                className="w-full border border-black rounded focus:outline-color-1 p-1 mt-1"
                 type={showPassword ? 'text' : 'password'}
+                value={value}
+                onChange={onChange}
             />
             <button className="absolute top-0 bottom-0 right-2" onClick={toggleShowpassword} type="button">
                 <FontAwesomeIcon
