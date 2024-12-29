@@ -85,9 +85,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='min-h-screen my-16' id='section4'>
-        <div className='relative w-full h-full flex'>
-          <Image className='w-full max-w-xl h-full max-h-screen object-cover' src='/images/hiring.jpg' width={500} height={500} alt='Banner'/>
+      <section className='my-16' id='section4'>
+        <div className='relative w-full min-h-screen flex'>
+          <Image className='w-full max-w-xl h-auto max-h-screen object-cover' src='/images/hiring.jpg' width={500} height={500} alt='Banner'/>
           <div className='bg-color-1 text-white flex-auto flex justify-center flex-col p-5 gap-y-5'>
             <h2 className='uppercase text-4xl font-extrabold text-center'>Join us</h2>
             <p className='text-center'>

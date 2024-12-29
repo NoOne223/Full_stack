@@ -1,28 +1,28 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "account_name": "John Doe",
-        "birthday": "03-03-1998",
-        "gender": "Male",
-        "kind_of_member": "Vip",
-        "email": "john.doe@example.com",
-        "phone": "0342127868",
-        "point": "1,500",
-        "username": "john_doe",
-        "password": "Password_123"
-      },
-      {
-        "id": 2,
-        "account_name": "Marry Dan",
-        "birthday": "16-08-1988",
-        "gender": "Female",
-        "kind_of_member": "regular",
-        "email": "marrydan.dan@example.com",
-        "phone": "0982582754",
-        "point": "800",
-        "username": "marry_dan",
-        "password": "Password_456"
-      }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "account_name": "John Doe",
+      "birthday": "03-03-1998",
+      "gender": "Male",
+      "kind_of_member": "Vip",
+      "email": "john.doe@example.com",
+      "phone": "0342127868",
+      "point": "1,500",
+      "username": "john_doe",
+      "password": "Password_123"
+    },
+    {
+      "id": 2,
+      "account_name": "Marry Dan",
+      "birthday": "16-08-1988",
+      "gender": "Female",
+      "kind_of_member": "regular",
+      "email": "marrydan.dan@example.com",
+      "phone": "0982582754",
+      "point": "800",
+      "username": "marry_dan",
+      "password": "Password_456"
+    }
+  ]
 }

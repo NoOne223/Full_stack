@@ -1,0 +1,45 @@
+{
+    "template": [
+        {
+            "id": 1,
+            "template_tag": "Template 1",
+            "keywords" : "Template 1, Classic, Old",
+            "image_banner" : "/images/example-img.jpg",
+            "link_review" : "https://www.youtube.com/watch?v=xHU0NRKnZP8",
+            "price" : "3,000,000"
+        },
+        {
+            "id": 2,
+            "template_tag": "Template 2",
+            "keywords" : "Template 2, Sale, Clothes, Modern, New",
+            "image_banner" : "/images/example-img.jpg",
+            "link_review" : "https://www.facebook.com/?locale=vi_VN",
+            "price" : "7,000,000"
+        },
+        {
+            "id": 3,
+            "template_tag": "Template 3",
+            "keywords" : "Template 3, Personal, Portfolio, Old",
+            "image_banner" : "/images/example-img.jpg",
+            "link_review" : "https://nicepage.com/",
+            "price" : "5,000,000"
+        },
+        {
+            "id": 4,
+            "template_tag": "Template 4",
+            "keywords" : "Template 5, Cafe, Store, Drink, New",
+            "image_banner" : "/images/example-img.jpg",
+            "link_review" : "https://fonttiengviet.com/danh-muc-font/font-viet-hoa/",
+            "price" : "2,500,000"
+        },
+        {
+            "id": 5,
+            "template_tag": "Template 5",
+            "keywords" : "Template 5, Home, Decor, Old",
+            "image_banner" : "/images/example-img.jpg",
+            "link_review" : "https://fontawesome.com/",
+            "price" : "8,800,000"
+        },
+        {}
+    ]
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './modal.css'
 import PasswordInput from '../ControlPass/PasswordInput'
 import SecondaryButton from '../Button/SecondaryButton'
+import { useRouter } from 'next/router';
 
 interface SigninModalProps{
   className?: string;
@@ -12,6 +13,7 @@ const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, on
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
+  const router = useRouter();
   
   const handleSignIn = async () => {
     try {
@@ -29,6 +31,7 @@ const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, on
         alert(`Welcome back, ${user.account_name}!`);
         setError(false);
         // Thực hiện các hành động tiếp theo như chuyển hướng
+        router.push("/");
       } else {
         setError(true); // Hiển thị thông báo lỗi
       }
