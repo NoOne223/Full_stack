@@ -31,7 +31,7 @@ const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, on
         alert(`Welcome back, ${user.account_name}!`);
         setError(false);
         // Thực hiện các hành động tiếp theo như chuyển hướng
-        router.push("/");
+        router.replace("/");
       } else {
         setError(true); // Hiển thị thông báo lỗi
       }
