@@ -1,27 +1,27 @@
-import React, { useState } from 'react'
-import './modal.css'
-import PasswordInput from '../ControlPass/PasswordInput'
-import SecondaryButton from '../Button/SecondaryButton'
-import { useRouter } from 'next/router';
+// components/SigninModal.tsx
 
-interface SigninModalProps{
+import React, { useState } from 'react';
+import './modal.css';
+import PasswordInput from '../ControlPass/PasswordInput';
+import SecondaryButton from '../Button/SecondaryButton';
+import { useRouter } from 'next/router';
+interface SigninModalProps {
   className?: string;
   toggleSigninup: () => void;
   onForgotPasswordClick: () => void;
 }
+
 const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, onForgotPasswordClick }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
   const router = useRouter();
-  
+
   const handleSignIn = async () => {
     try {
-      // Fetch dữ liệu từ userdata.json
       const response = await fetch('/example_data/userdata.json');
       const data = await response.json();
 
-      // Kiểm tra username và password
       const user = data.users.find(
         (user: { username: string; password: string }) =>
           user.username === username && user.password === password
@@ -30,10 +30,9 @@ const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, on
       if (user) {
         alert(`Welcome back, ${user.account_name}!`);
         setError(false);
-        // Thực hiện các hành động tiếp theo như chuyển hướng
-        router.replace("/");
+        router.replace("/"); // Chuyển hướng về trang chủ
       } else {
-        setError(true); // Hiển thị thông báo lỗi
+        setError(true);
       }
     } catch (err) {
       console.error('Error fetching user data:', err);
@@ -69,7 +68,7 @@ const SigninModal: React.FC<SigninModalProps> = ({ className, toggleSigninup, on
       <SecondaryButton onClick={handleSignIn} type='submit' className='hover:bg-color-1 w-full mt-3'>Sign in</SecondaryButton>
       <p className='mt-3 text-center'>Don't have account? <button className='text-color-2' onClick={toggleSigninup}>Sign up now</button></p>
     </div>
-  )
+  );
 }
 
-export default SigninModal
+export default SigninModal;

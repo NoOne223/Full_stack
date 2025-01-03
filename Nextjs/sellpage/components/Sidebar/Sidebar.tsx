@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faSquareFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import NoticeAccount from '../Modals/NoticeAccount';
 
+
 const Sidebar = () => {
   const pathname = usePathname();
 
