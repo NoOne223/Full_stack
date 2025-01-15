@@ -10,3 +10,15 @@
     color: theme('colors.primary-color') !important;
     font-size: 50px !important;
 }
+.slick-dots{
+    bottom: -30px !important;
+}
+.slick-dots .slick-active button::before{
+    content: '\f072';
+    font-family: 'FontAwesome';
+    font-size: 25px !important;
+} 
+.slick-dots li button:before{
+    color: theme('colors.primary-color') !important;
+    opacity: 1 !important;
+}

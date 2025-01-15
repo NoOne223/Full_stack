@@ -17,10 +17,12 @@ const Slide = () => {
         centerMode: true,
         infinite: true,
         slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
         speed: 500,
     };
   return (
-    <div className='mt-5'>
+    <div className='mt-5 slider-container'>
         <Slider {...settings}>
             <div className='px-16'>
                 <div className='shadow-custom-1 rounded-xl'>
