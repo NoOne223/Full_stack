@@ -12,6 +12,9 @@ export default {
         "primary-color": "#34a0a4",
         "secondary-color": "#669bbc",
       },
+      boxShadow: {
+        'custom-1' : '0px 0px 5px rgba(0, 0, 0, 0.5)',
+      },
     },
     container:{
       screens: {

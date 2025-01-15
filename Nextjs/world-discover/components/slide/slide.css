@@ -1,0 +1,12 @@
+.slick-next:before{
+    content: '\f0da' !important;
+    font-family: 'FontAwesome' !important;
+    color: theme('colors.primary-color') !important;
+    font-size: 50px !important;
+}
+.slick-prev:before{
+    content: '\f0d9' !important;
+    font-family: 'FontAwesome' !important;
+    color: theme('colors.primary-color') !important;
+    font-size: 50px !important;
+}
