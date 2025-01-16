@@ -7,7 +7,7 @@ const BookingArea = () => {
   return (
     <>
       <div className='grid grid-cols-4 gap-4 mt-5'>
-        <Link href=''>
+        <Link href='/flight'>
           <button 
           className='border py-5 shadow-md rounded-lg w-full h-full bg-white text-gray-400 scale-100 transition-all ease-in-out duration-300
           hover:scale-105 hover:text-white hover:bg-gradient-to-t from-violet-400 to-fuchsia-400
