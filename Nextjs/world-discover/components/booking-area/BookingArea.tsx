@@ -1,50 +1,57 @@
 import Link from 'next/link'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloud, faHotel, faNewspaper, faPlaneDeparture } from '@fortawesome/free-solid-svg-icons';
+import './bookingarea.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHotel, faNewspaper, faPlaneUp, faTemperatureHalf } from '@fortawesome/free-solid-svg-icons'
 
 const BookingArea = () => {
   return (
-    <>
-      <div className='grid grid-cols-4 gap-4 mt-5'>
-        <Link href='/flight'>
-          <button 
-          className='border py-5 shadow-md rounded-lg w-full h-full bg-white text-gray-400 scale-100 transition-all ease-in-out duration-300
-          hover:scale-105 hover:text-white hover:bg-gradient-to-t from-violet-400 to-fuchsia-400
-          '>
-            <FontAwesomeIcon className='text-6xl mb-3' icon={faPlaneDeparture} />
-            <p className='text-4xl font-bold'>Flight Booking</p>
-          </button>
-        </Link>
-        <Link href='' className='min-h-[150px]'>
-          <button 
-          className='border py-5 shadow-md rounded-lg w-full h-full bg-white text-gray-400 scale-100 transition-all ease-in-out duration-300
-          hover:scale-105 hover:text-white hover:bg-gradient-to-t from-blue-600 to-blue-400
-          '>
-            <FontAwesomeIcon className='text-6xl mb-3'  icon={faHotel} />
-            <p className='text-4xl font-bold'>Hotel Booking</p>
-          </button>
-        </Link>
-        <Link href='' className='min-h-[150px]'>
-          <button 
-          className='border py-5 shadow-md rounded-lg w-full h-full bg-white text-gray-400 scale-100 transition-all ease-in-out duration-300
-          hover:scale-105 hover:text-white hover:bg-gradient-to-t from-green-400 to-green-300
-          '>
-            <FontAwesomeIcon className='text-6xl mb-3'  icon={faCloud} />
-            <p className='text-4xl font-bold'>Weather</p>
-          </button>
-        </Link>
-        <Link href='' className='min-h-[150px]'>
-          <button 
-          className='border py-5 shadow-md rounded-lg w-full h-full bg-white text-gray-400 scale-100 transition-all ease-in-out duration-300
-          hover:scale-105 hover:text-white hover:bg-gradient-to-t from-red-400 to-orange-400
-          '>
-            <FontAwesomeIcon className='text-6xl mb-3'  icon={faNewspaper} />
-            <p className='text-4xl font-bold'>News</p>
-          </button>
-        </Link>
+    <div className='background min-h-[100vh] content-center'>
+     <div className='container mx-auto p-3'>
+      <div className='flex items-center gap-x-5'>
+        <div className='w-1/2'>
+          <h2 className="text-white text-6xl font-bold mb-5">This is title</h2>
+          <p className='text-white text-4xl font-bold'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo quos consequuntur qui dolores quas non commodi reprehenderit corrupti nesciunt ipsam ut quidem, doloremque adipisci? Ducimus et doloribus architecto reprehenderit?
+          </p>
+        </div>
+        <div className='w-1/2 grid grid-cols-2 gap-6'>
+          <Link href='/flight' className='min-h-[300px]'>
+            <div 
+            className='bg-white rounded-xl shadow-xl text-center text-gray-400 h-full flex flex-col justify-center scale-100 transition-all duration-300 ease-in-out
+            hover:bg-primary-color hover:text-white hover:scale-105'>
+              <FontAwesomeIcon className='text-8xl mb-3' icon={faPlaneUp} />
+              <p className='text-4xl font-bold'>Flight Booking</p>
+            </div>
+          </Link>
+          <Link href='/' className='min-h-[300px]'>
+            <div 
+            className='bg-white rounded-xl shadow-xl text-center text-gray-400 h-full flex flex-col justify-center scale-100 transition-all duration-300 ease-in-out
+            hover:bg-primary-color hover:text-white hover:scale-105'>
+              <FontAwesomeIcon className='text-8xl mb-3' icon={faHotel} />
+              <p className='text-4xl font-bold'>Hotel Booking</p>
+            </div>
+          </Link>
+          <Link href='/' className='min-h-[300px]'>
+            <div 
+            className='bg-white rounded-xl shadow-xl text-center text-gray-400 h-full flex flex-col justify-center scale-100 transition-all duration-300 ease-in-out
+            hover:bg-primary-color hover:text-white hover:scale-105'>
+              <FontAwesomeIcon className='text-8xl mb-3' icon={faTemperatureHalf} />
+              <p className='text-4xl font-bold'>Weather check</p>
+            </div>
+          </Link>
+          <Link href='/' className='min-h-[300px]'>
+            <div 
+            className='bg-white rounded-xl shadow-xl text-center text-gray-400 h-full flex flex-col justify-center scale-100 transition-all duration-300 ease-in-out
+            hover:bg-primary-color hover:text-white hover:scale-105'>
+              <FontAwesomeIcon className='text-8xl mb-3' icon={faNewspaper} />
+              <p className='text-4xl font-bold'>News</p>
+            </div>
+          </Link>
+        </div>
       </div>
-    </>
+     </div>
+    </div>
   )
 }
 

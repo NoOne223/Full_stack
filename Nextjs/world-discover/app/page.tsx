@@ -15,16 +15,23 @@ export default function Home() {
     <>
       <Parallax />
       <main>
-        <section className="container mx-auto p-3 min-h-[50vh] content-center">
+        <section className="container mx-auto p-3 mt-5">
           <h2 className="text-secondary-color text-6xl font-bold mb-5 text-center">This is title</h2>
           <p className="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore eius at nemo, soluta ducimus modi nostrum mollitia reprehenderit hic ullam quod, laboriosam autem laborum cupiditate corporis. Tempore quisquam ipsum est.</p>
+          <div className="flex gap-x-5 mt-5">
+            <Image src='/images/attendant-1.jpg' width={500} height={500} alt="Attendant example image"/>
+            <Image src='/images/attendant-2.jpg' width={500} height={500} alt="Attendant example image"/>
+            <Image src='/images/attendant-3.jpg' width={500} height={500} alt="Attendant example image"/>
+          </div>
+        </section>
+        <section className="mt-5">
           <BookingArea />
         </section>
         <section className="container mx-auto p-3 mt-5">
           <h2 className="text-secondary-color text-6xl font-bold mb-5">This is title</h2>
           <Slide />
         </section>
-        <section className="container mx-auto p-3">
+        <section className="container mx-auto p-3 mt-5">
           <h2 className="text-secondary-color text-6xl font-bold mb-5">This is title</h2>
           <div className="flex gap-5">
             <FaqAccordion />
