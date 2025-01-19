@@ -11,7 +11,7 @@ const BookingArea = () => {
       <div className='flex items-center gap-x-5'>
         <div className='w-1/2'>
           <h2 className="text-white text-6xl font-bold mb-5">This is title</h2>
-          <p className='text-white text-4xl font-bold'>
+          <p className='text-white text-4xl'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo quos consequuntur qui dolores quas non commodi reprehenderit corrupti nesciunt ipsam ut quidem, doloremque adipisci? Ducimus et doloribus architecto reprehenderit?
           </p>
         </div>
