@@ -1,15 +1,15 @@
 import React from 'react';
 
-
-interface ModalProps{
-    onClose: () => void;
+interface Modal1Props{
+  onClose: () => void;
 }
 
-const Modal1: React.FC<ModalProps> = ({ onClose }) => {
+const Modal1: React.FC<Modal1Props> = ({ onClose }) => {
+
   return (
     <div>
       <h2>This is Modal 1</h2>
-      <button onClick={onClose}>Close</button>
+      <button onClick={onClose}>Close modal</button>
     </div>
   );
 };

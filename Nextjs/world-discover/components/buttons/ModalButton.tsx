@@ -2,11 +2,11 @@ import React from 'react';
 
 interface ModalButtonProps {
   onClick: () => void;
-  label: string;
+  children: string;
 }
 
-const ModalButton: React.FC<ModalButtonProps> = ({ onClick, label }) => {
-  return <button onClick={onClick}>{label}</button>;
+const ModalButton: React.FC<ModalButtonProps> = ({ onClick, children }) => {
+  return <button onClick={onClick}>{children}</button>;
 };
 
 export default ModalButton;
