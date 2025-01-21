@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface Modal1Props{
+interface ModalAccountProps{
   onClose: () => void;
 }
 
-const Modal1: React.FC<Modal1Props> = ({ onClose }) => {
+const ModalAccount: React.FC<ModalAccountProps> = ({ onClose }) => {
 
   return (
     <div>
@@ -14,4 +14,4 @@ const Modal1: React.FC<Modal1Props> = ({ onClose }) => {
   );
 };
 
-export default Modal1;
+export default ModalAccount;

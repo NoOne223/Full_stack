@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ModalButton from '../buttons/ModalButton';
-import Modal1 from '../modals/Modal1';
+import Modal1 from '../modals/ModalAccount';
 import Modal2 from '../modals/Modal2';
 
 const Testing = () => {

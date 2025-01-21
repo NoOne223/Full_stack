@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import ModalButton from '../buttons/ModalButton'
-
+import ModalAccount from '../modals/ModalAccount';
 const Header = () => {
-  const [activeModal, setActiveModal] = useState<ModalName>(null);
-  
-    const openModal = (modalName: ModalName): void => {
+    const [activeModal, setActiveModal] = useState<string | null>(null); // null khi không có modal nào được mở
+    
+    const openModal = (modalName: string) => {
       setActiveModal(modalName);
     };
   
@@ -18,7 +18,8 @@ const Header = () => {
     <div>
         <div className='container mx-auto p-3'>
           <Link href='/'><Image className='w-fit h-16 object-contain' src='/images/pagelogo.png' width={500} height={500} alt='Logo'/></Link>
-          <ModalButton onClick={() => openModal('modal1')}>Open modal</ModalButton>
+          <ModalButton onClick={() => openModal('modalaccount')}>Open modal</ModalButton>
+          {activeModal === 'modalaccount' && <ModalAccount onClose={closeModal} />}
         </div>
     </div>
   )
