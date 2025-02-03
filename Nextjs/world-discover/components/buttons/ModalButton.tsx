@@ -6,7 +6,7 @@ interface ModalButtonProps {
 }
 
 const ModalButton: React.FC<ModalButtonProps> = ({ onClick, children }) => {
-  return <button onClick={onClick}>{children}</button>;
+  return <button className='text-white bg-black py-2 min-w-[150px] rounded-lg' onClick={onClick}>{children}</button>;
 };
 
 export default ModalButton;

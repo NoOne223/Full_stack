@@ -16,9 +16,9 @@ const Header = () => {
     
   return (
     <div>
-        <div className='container mx-auto p-3'>
+        <div className='container mx-auto p-3 flex items-center justify-between'>
           <Link href='/'><Image className='w-fit h-16 object-contain' src='/images/pagelogo.png' width={500} height={500} alt='Logo'/></Link>
-          <ModalButton onClick={() => openModal('modalaccount')}>Open modal</ModalButton>
+          <ModalButton onClick={() => openModal('modalaccount')}>Login</ModalButton>
           {activeModal === 'modalaccount' && <ModalAccount onClose={closeModal} />}
         </div>
     </div>
