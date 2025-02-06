@@ -9,9 +9,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        
       },
+    },
+    container:{
+      screens: {
+        '2xl': '1650px',
+      },
+    },
+    screens:{
+      'sm' : '320px',
+      'md' : '768px',
+      'lg' : '1024px',
+      'xl' : '1440px',
+      '2xl' : '1650px',
     },
   },
   plugins: [],
