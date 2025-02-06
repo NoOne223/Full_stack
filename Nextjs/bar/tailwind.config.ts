@@ -9,21 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primarycolor: "#d4a373",
-        secondarycolor: "#ccd5ae",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
       },
-    },
-    container: {
-      screens:{
-        'xl' : '1560px'
-      }
-    },
-    screens:{
-      'sm': '320px',
-      'md': '768px',
-      'lg': '1080px',
-      'xl': '1560px',
-      '2xl': '2040px',
     },
   },
   plugins: [],
