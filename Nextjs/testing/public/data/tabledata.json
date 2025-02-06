@@ -1,0 +1,28 @@
+{
+    "authors": [
+      {
+        "id": 1,
+        "author_name": "Văn Cao",
+        "author_birthday": "15/11/1923",
+        "piece_name": "Những người trên cửa biển",
+        "year_of_composition": "1956",
+        "description": "Với bốn chương chia làm 16 khổ thơ, trường ca “Những người trên cửa biển” được viết trên tinh thần “Tôi yêu Hải Phòng như Việt Nam nhỏ lại / Tôi yêu Việt Nam như tôi biết yêu tôi”. Cái riêng hòa vào cái chung, “Những người trên cửa biển” như một “tổng phổ” về những năm tháng tận tụy của Văn Cao với thành phố cảng, từ sự thủ thỉ “quê mẹ quê cha cách một vườn trầu” đến sự san sẻ “kíp thợ đêm lê về đến xóm/ nghe rét mùa đông nổi cuối sông” và bất chợt hân hoan “những năm đầu chính quyền cách mạng/ giấc mơ của Hải Phòng / như bóng cò trắng bay về lòng tôi thuở nhỏ"
+      },
+      {
+        "id": 2,
+        "author_name": "Tố Hữu",
+        "author_birthday": "4/10/1920",
+        "piece_name": "Việt Bắc",
+        "year_of_composition": "1947",
+        "description": "Việt Bắc là một bài thơ trữ tình cách mạng, Tố Hữu đã diễn tả một cách hình tượng hóa trong bài thơ Việt Bắc mối tình trong 15 năm của hai nhân vật văn học là chiến khu Việt Bắc với người cán bộ cách mạng, như một mối tình riêng mà người cán bộ cách mạng và Việt Bắc là đôi bạn tình; cũng là nỗi nhớ quê hương và con người Việt Bắc của người cán bộ cách mạng, nhớ những kỉ niệm kháng chiến khó khăn hào hùng."
+      },
+      {
+        "id": 3,
+        "author_name": "Xuân Quỳnh",
+        "author_birthday": "6/10/1942",
+        "piece_name": "Hoa cỏ may",
+        "year_of_composition": "1989",
+        "description": "Hoa cỏ may gợi nhớ về những kỷ niệm tình yêu, những cảm xúc chân thành nhưng cũng đầy trăn trở trong tâm hồn người phụ nữ. Hình ảnh hoa cỏ may – loài hoa dại mộc mạc, nhỏ bé – xuất hiện như một biểu tượng cho tình cảm đơn sơ, tinh khôi nhưng lại bám sâu và dai dẳng, giống như tình yêu trong trái tim của nhân vật trữ tình."
+      }
+    ]
+  }
