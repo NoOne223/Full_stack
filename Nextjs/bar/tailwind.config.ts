@@ -11,6 +11,10 @@ export default {
       colors: {
         
       },
+      boxShadow: {
+        'inner-custom': 'inset 0 5px 15px 5px rgba(0, 0, 0, 0.1)',
+        'custom': '0px 0px 10px 1px',
+      },
     },
     container:{
       screens: {
