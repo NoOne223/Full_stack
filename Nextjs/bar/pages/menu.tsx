@@ -15,7 +15,7 @@ export default function Menu(){
             <main>
                 <section className="mt-16">
                     <div className="container mx-auto p-3">
-                        <h2 className='uppercase font-bold text-5xl italic mb-3'>Xin chào!</h2>
+                        <h2 className='uppercase font-bold text-5xl italic mb-3'>Menu đồ ăn !</h2>
                     </div>
                 </section>
             </main>
