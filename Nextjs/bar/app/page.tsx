@@ -1,3 +1,5 @@
+import ScrolltopButton from '@/components/buttons/ScrolltopButton';
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
 import TabContent from '@/components/tab/TabContent';
 import type { Metadata } from 'next'
@@ -75,6 +77,8 @@ export default function Home() {
         <TabContent />
       </section>
     </main>
+    <Footer />
+    <ScrolltopButton />
    </>
   );
 }

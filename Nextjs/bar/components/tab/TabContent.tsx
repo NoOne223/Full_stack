@@ -10,11 +10,11 @@ import PrimaryButton from '../buttons/PrimaryButton';
 
 const TabContent = () => {
   return (
-    <TabGroup className='flex container mx-auto p-3 min-h-[50vh]'>
-      <TabList className='w-1/2 relative max-h-[50vh]'>
+    <TabGroup className='container mx-auto p-3 min-h-[50vh]'>
+      <TabList className='grid grid-cols-3 gap-5 mb-10'>
         <Tab
           className={({ selected }) =>
-            `absolute top-0 left-0 right-0 mx-auto bg-black rotate-[10deg] hover:shadow-emerald-500/50 hover:text-emerald-500 focus:outline-none h-40 max-w-40 w-full rounded-lg shadow-custom font-bold transition-all duration-300 ease-in-out ${
+            `bg-black hover:shadow-emerald-500/50 hover:text-emerald-500 focus:outline-none py-5 w-full rounded-lg shadow-custom font-bold transition-all duration-300 ease-in-out ${
               selected ? "shadow-emerald-500/50 text-emerald-500 z-10" : "z-0"
             }`
           }
@@ -23,7 +23,7 @@ const TabContent = () => {
         </Tab>
         <Tab
           className={({ selected }) =>
-            `absolute top-28 left-0 right-10 mx-auto bg-black rotate-[-5deg] hover:shadow-purple-500/50 hover:text-purple-500 focus:outline-none h-40 max-w-40 w-full rounded-lg shadow-custom font-bold transition-all duration-300 ease-in-out ${
+            `bg-black hover:shadow-purple-500/50 hover:text-purple-500 focus:outline-none py-5 w-full rounded-lg shadow-custom font-bold transition-all duration-300 ease-in-out ${
               selected ? "shadow-purple-500/50 text-purple-500 z-10" : "z-0"
             }`
           }
@@ -32,7 +32,7 @@ const TabContent = () => {
         </Tab>
         <Tab
           className={({ selected }) =>
-            `absolute bottom-8 left-20 right-0 mx-auto bg-black rotate-[10deg] hover:shadow-amber-500/50 hover:text-amber-500 focus:outline-none h-40 max-w-40 w-full rounded-lg shadow-custom font-bold transition-all duration-300 ease-in-out ${
+            `bg-black hover:shadow-amber-500/50 hover:text-amber-500 focus:outline-none py-5 w-full rounded-lg shadow-custom font-bold transition-all duration-300 ease-in-out ${
               selected ? "shadow-amber-500/50 text-amber-500 z-10" : "z-0"
             }`
           }
@@ -40,7 +40,7 @@ const TabContent = () => {
           Góp ý
         </Tab>
       </TabList>
-      <TabPanels className='w-1/2'>
+      <TabPanels>
         <TabPanel>
           <h2 className='uppercase font-bold text-5xl mb-3'>Giờ hoạt động</h2>
           <p className='mb-3'>Chúng tôi mở cửa lúc 16:00 và đóng cửa lúc 23:00 từ Thứ 2 đến Chủ Nhật</p>
