@@ -1,0 +1,70 @@
+{
+    "meals": [
+        {
+            "id": 1,
+            "name": "Cà ri bò",
+            "price": "75.000đ",
+            "image": "/images/cari-beef.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Bò sốt & khoai tây nghiền",
+            "price": "105.000đ",
+            "image": "/images/bo-sot-khoai-tay.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Bò áp chảo",
+            "price": "75.000đ",
+            "image": "/images/bo-ap-chao.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Gà nướng",
+            "price": "135.000đ",
+            "image": "/images/ga-nuong.jpeg"
+        },
+        {
+            "id": 5,
+            "name": "Gà chiên sốt mayo",
+            "price": "85.000đ",
+            "image": "/images/ga-chien-sot.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "Gà viên chiên",
+            "price": "75.000đ",
+            "image": "/images/ga-vien.jpeg"
+        },
+        {
+            "id": 7,
+            "name": "Cá phi lê sốt hành",
+            "price": "65.000đ",
+            "image": "/images/ca-phile-sot.jpeg"
+        },
+        {
+            "id": 8,
+            "name": "Khoai tây chiên",
+            "price": "55.000đ",
+            "image": "/images/khoai-tay-chien.jpeg"
+        },
+        {
+            "id": 9,
+            "name": "Mì Ý",
+            "price": "55.000đ",
+            "image": "/images/mi-y.jpeg"
+        },
+        {
+            "id": 10,
+            "name": "Cơm chiên bò",
+            "price": "55.000đ",
+            "image": "/images/com-chien-bo.jpeg"
+        },
+        {
+            "id": 11,
+            "name": "Tôm chiên sốt cay",
+            "price": "65.000đ",
+            "image": "/images/tom-chien-sot-cay.jpeg"
+        }
+    ]
+}
