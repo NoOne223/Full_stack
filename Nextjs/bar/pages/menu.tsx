@@ -4,6 +4,7 @@ import "/app/globals.css"
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import DrinksTab from "@/components/tab/DrinksTab";
 
 type Meals = {
     id: number;
@@ -52,6 +53,12 @@ export default function Menu(){
                                 </div>
                             )}
                         </div>
+                    </div>
+                </section>
+                <section className="mt-16">
+                    <div className="container mx-auto p-3">
+                        <h2 className='uppercase font-bold text-5xl italic mb-3'>Menu đồ uống !</h2>
+                        <DrinksTab />
                     </div>
                 </section>
             </main>
