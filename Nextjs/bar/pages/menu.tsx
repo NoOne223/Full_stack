@@ -5,6 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import DrinksTab from "@/components/tab/DrinksTab";
+import ScrolltopButton from "@/components/buttons/ScrolltopButton";
 
 type Meals = {
     id: number;
@@ -63,6 +64,7 @@ export default function Menu(){
                 </section>
             </main>
             <Footer />
+            <ScrolltopButton />
         </>
     );
 }

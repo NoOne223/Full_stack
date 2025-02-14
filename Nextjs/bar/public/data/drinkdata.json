@@ -6,77 +6,316 @@
             "items": [
                 {
                     "item_id": 1,
-                    "item_name": "Mojito",
-                    "ingredients": "(Rum, chanh, bạc hà, soda)",
+                    "item_name": "Virgin Mojito",
+                    "ingredients": "( Nước chanh, bạc hà, soda, đường )",
                     "price": "35.000đ",
-                    "image": "/images/cari-beef.jpeg"
+                    "strength": 1
                 },
                 {
                     "item_id": 2,
-                    "item_name": "Khoai tây nghiền",
-                    "price": "35.000đ"
+                    "item_name": "Shirley Temple",
+                    "ingredients": "( Gừng ale, grenadine, chanh )",
+                    "price": "35.000đ",
+                    "strength": 1
+                },
+                {
+                    "item_id": 3,
+                    "item_name": "Piña Colada",
+                    "ingredients": "( Rum, nước dứa, nước cốt dừa )",
+                    "price": "45.000đ",
+                    "strength": 2
+                },
+                {
+                    "item_id": 4,
+                    "item_name": "Sex on the Beach",
+                    "ingredients": "( Vodka, rượu đào, nước cam, nam việt quất )",
+                    "price": "65.000đ",
+                    "strength": 2
+                },
+                {
+                    "item_id": 5,
+                    "item_name": "Tequila Sunrise",
+                    "ingredients": "( Tequila, nước cam, grenadine )",
+                    "price": "65.000đ",
+                    "strength": 2
+                },
+                {
+                    "item_id": 6,
+                    "item_name": "Mojito",
+                    "ingredients": "( Rum, chanh, bạc hà, soda )",
+                    "price": "55.000đ",
+                    "strength": 3
+                },
+                {
+                    "item_id": 7,
+                    "item_name": "Margarita",
+                    "ingredients": "( Tequila, Cointreau, nước chanh )",
+                    "price": "75.000đ",
+                    "strength": 3
+                },
+                {
+                    "item_id": 8,
+                    "item_name": "Cosmopolitan",
+                    "ingredients": "( Vodka, Cointreau, nước nam việt quất, nước chanh )",
+                    "price": "85.000đ",
+                    "strength": 3
+                },
+                {
+                    "item_id": 9,
+                    "item_name": "Moscow Mule",
+                    "ingredients": "( Vodka, bia gừng, chanh )",
+                    "price": "75.000đ",
+                    "strength": 3
+                },
+                {
+                    "item_id": 10,
+                    "item_name": "Daiquiri",
+                    "ingredients": "( Rum, nước chanh, đường )",
+                    "price": "65.000đ",
+                    "strength": 3
+                },
+                {
+                    "item_id": 11,
+                    "item_name": "Whiskey Sour",
+                    "ingredients": "( Whiskey, nước chanh, đường, lòng trắng trứng(tùy chọn) )",
+                    "price": "85.000đ",
+                    "strength": 3
+                },
+                {
+                    "item_id": 12,
+                    "item_name": "Martini",
+                    "ingredients": "( Gin, Vermouth, chanh hoặc olive )",
+                    "price": "95.000đ",
+                    "strength": 4
+                },
+                {
+                    "item_id": 13,
+                    "item_name": "Negroni",
+                    "ingredients": "( Gin, Campari, Vermouth ngọt )",
+                    "price": "105.000đ",
+                    "strength": 4
+                },
+                {
+                    "item_id": 14,
+                    "item_name": "Old Fashioned",
+                    "ingredients": "( Whiskey, đường, bitters, vỏ cam )",
+                    "price": "95.000đ",
+                    "strength": 4
+                },
+                {
+                    "item_id": 15,
+                    "item_name": "Manhattan",
+                    "ingredients": "( Whiskey, Vermouth ngọt, bitters )",
+                    "price": "105.000đ",
+                    "strength": 4
+                },
+                {
+                    "item_id": 16,
+                    "item_name": "Espresso Martini",
+                    "ingredients": "( Vodka, cà phê espresso, Kahlúa )",
+                    "price": "125.000đ",
+                    "strength": 4
+                },
+                {
+                    "item_id": 17,
+                    "item_name": "Long Island Iced Tea",
+                    "ingredients": "( Vodka, Rum, Gin, Tequila, Triple Sec, chanh, cola )",
+                    "price": "155.000đ",
+                    "strength": 5
+                },
+                {
+                    "item_id": 18,
+                    "item_name": "Zombie",
+                    "ingredients": "( Rum nhiều loại, nước cam, nước chanh, grenadine, bitters )",
+                    "price": "175.000đ",
+                    "strength": 5
+                },
+                {
+                    "item_id": 19,
+                    "item_name": "B-52",
+                    "ingredients": "( Kahlúa, Baileys, Grand Marnier (rượu mùi cam) )",
+                    "price": "175.000đ",
+                    "strength": 5
                 }
             ]
         },
         {
             "id": 2,
-            "name": "Bò sốt & khoai tây nghiền",
-            "price": "105.000đ",
-            "image": "/images/bo-sot-khoai-tay.jpeg"
+            "name": "Rượu",
+            "items":[
+                {
+                    "item_id": 1,
+                    "item_name": "Vodka",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 2,
+                    "item_name": "Whiskey",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 3,
+                    "item_name": "Rum",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 4,
+                    "item_name": "Gin",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 5,
+                    "item_name": "Tequila",
+                    "price": "105.000đ"
+                },
+                {
+                    "item_id": 6,
+                    "item_name": "Brandy",
+                    "price": "105.000đ"
+                },
+                {
+                    "item_id": 7,
+                    "item_name": "Vang đỏ",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 8,
+                    "item_name": "Vang trắng",
+                    "price": "75.000đ"
+                },
+                {
+                    "item_id": 9,
+                    "item_name": "Vang hồng",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 10,
+                    "item_name": "Vang sủi",
+                    "price": "105.000đ"
+                },
+                {
+                    "item_id": 11,
+                    "item_name": "Baileys",
+                    "price": "85.000đ"
+                },
+                {
+                    "item_id": 12,
+                    "item_name": "Kahlúa",
+                    "price": "105.000đ"
+                },
+                {
+                    "item_id": 13,
+                    "item_name": "Cointreau",
+                    "price": "105.000đ"
+                },
+                {
+                    "item_id": 14,
+                    "item_name": "Jägermeister",
+                    "price": "115.000đ"
+                },
+                {
+                    "item_id": 15,
+                    "item_name": "Vermouth",
+                    "price": "120.000đ"
+                }
+            ]
         },
         {
             "id": 3,
-            "name": "Bò áp chảo",
-            "price": "75.000đ",
-            "image": "/images/bo-ap-chao.jpeg"
+            "name": "Bia & Cider",
+            "items": [
+                {
+                    "item_id": 1,
+                    "item_name": "Heineken",
+                    "price": "15.000đ"
+                },
+                {
+                    "item_id": 2,
+                    "item_name": "Budweiser",
+                    "price": "15.000đ"
+                },
+                {
+                    "item_id": 3,
+                    "item_name": "IPA",
+                    "price": "75.000đ"
+                },
+                {
+                    "item_id": 4,
+                    "item_name": "Stout",
+                    "price": "75.000đ"
+                },
+                {
+                    "item_id": 5,
+                    "item_name": "Strongbow",
+                    "price": "25.000đ"
+                },
+                {
+                    "item_id": 6,
+                    "item_name": "Stout",
+                    "price": "25.000đ"
+                }
+            ]
         },
         {
             "id": 4,
-            "name": "Gà nướng",
-            "price": "135.000đ",
-            "image": "/images/ga-nuong.jpeg"
-        },
-        {
-            "id": 5,
-            "name": "Gà chiên sốt mayo",
-            "price": "85.000đ",
-            "image": "/images/ga-chien-sot.jpeg"
-        },
-        {
-            "id": 6,
-            "name": "Gà viên chiên",
-            "price": "75.000đ",
-            "image": "/images/ga-vien.jpeg"
-        },
-        {
-            "id": 7,
-            "name": "Cá phi lê sốt hành",
-            "price": "65.000đ",
-            "image": "/images/ca-phile-sot.jpeg"
-        },
-        {
-            "id": 8,
-            "name": "Khoai tây chiên",
-            "price": "55.000đ",
-            "image": "/images/khoai-tay-chien.jpeg"
-        },
-        {
-            "id": 9,
-            "name": "Mì Ý",
-            "price": "55.000đ",
-            "image": "/images/mi-y.jpeg"
-        },
-        {
-            "id": 10,
-            "name": "Cơm chiên bò",
-            "price": "55.000đ",
-            "image": "/images/com-chien-bo.jpeg"
-        },
-        {
-            "id": 11,
-            "name": "Tôm chiên sốt cay",
-            "price": "65.000đ",
-            "image": "/images/tom-chien-sot-cay.jpeg"
+            "name": "Đồ uống không cồn",
+            "items": [
+                {
+                    "item_id": 1,
+                    "item_name": "Nước ép cam",
+                    "price": "25.000đ"
+                },
+                {
+                    "item_id": 2,
+                    "item_name": "Nước ép dưa hấu",
+                    "price": "25.000đ"
+                },
+                {
+                    "item_id": 3,
+                    "item_name": "Nước ép xoài",
+                    "price": "30.000đ"
+                },
+                {
+                    "item_id": 4,
+                    "item_name": "Nước ngọt",
+                    "price": "15.000đ"
+                },
+                {
+                    "item_id": 5,
+                    "item_name": "Tonic Water",
+                    "price": "15.000đ"
+                },
+                {
+                    "item_id": 6,
+                    "item_name": "Soda chanh",
+                    "price": "35.000đ"
+                },
+                {
+                    "item_id": 7,
+                    "item_name": "Soda bạc hà",
+                    "price": "35.000đ"
+                },
+                {
+                    "item_id": 8,
+                    "item_name": "Espresso",
+                    "price": "35.000đ"
+                },
+                {
+                    "item_id": 9,
+                    "item_name": "Latte",
+                    "price": "35.000đ"
+                },
+                {
+                    "item_id": 10,
+                    "item_name": "Nước khoáng",
+                    "price": "15.000đ"
+                },
+                {
+                    "item_id": 11,
+                    "item_name": "Dừa tươi",
+                    "price": "15.000đ"
+                }
+            ]
         }
     ]
 }
