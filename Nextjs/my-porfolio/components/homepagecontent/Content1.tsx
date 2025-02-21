@@ -8,16 +8,16 @@ const Content1 = () => {
         <h1 className='text-center font-bold uppercase text-6xl leading-tight'>Những thứ tốt trong tự nhiên <br></br> đều chầm chậm</h1>
         <div className='flex items-center justify-center gap-x-5 mt-3'>
           <div>
-            <p>Mặt trời chầm chậm mọc</p>
+            <p className='text-base'>Mặt trời chầm chậm mọc</p>
           </div>
           <div>
-            <p>Hoa nở từng bông</p>
+            <p className='text-base'>Hoa nở từng bông</p>
           </div>
           <div>
-            <p>Lúa chầm chậm chín</p>
+            <p className='text-base'>Lúa chầm chậm chín</p>
           </div>
         </div>
-        <p  className='text-center text-2xl mt-3 italic'>Vì thế những nỗ lực của bạn không phải chưa đạt được thành quả mà thành quả sẽ từ từ đến <br></br> nếu bạn không ngừng nỗ lực</p>
+        <p  className='text-center mt-3 italic'>Vì thế những nỗ lực của bạn không phải chưa đạt được thành quả mà thành quả sẽ từ từ đến <br></br> nếu bạn không ngừng nỗ lực</p>
       </div>
     </div>
   )

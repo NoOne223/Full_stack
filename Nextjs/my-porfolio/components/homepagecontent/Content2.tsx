@@ -32,7 +32,7 @@ const Content2 = () => {
                 </div>
             </Link>
         </div>
-        <div className='bg-white shadow p-5 text-center max-w-44 w-full h-fit absolute top-0 bottom-0 left-0 right-0 m-auto'>
+        <div className='bg-gray-500 text-white shadow p-12 text-center max-w-60 w-full h-fit absolute top-0 bottom-0 left-0 right-0 m-auto'>
             <p className='font-bold uppercase'>Portfolio</p>
         </div>
     </div>
