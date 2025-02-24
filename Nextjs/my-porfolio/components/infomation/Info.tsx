@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 const Info = () => {
   return (
@@ -37,12 +35,8 @@ const Info = () => {
       </div>
       <div className='bg-black'>
         <div className='container mx-auto px-3 py-8'>
+          <h2 className='text-white text-6xl font-bold text-center mb-5'>Ngoại ngữ</h2>
           <div className='flex justify-center gap-x-10'>
-            <div className='text-white border border-transparent rounded-3xl shadow-md shadow-gray-500 p-4 content-center max-w-[400px] w-full text-center'>
-              <FontAwesomeIcon className='max-h-32 w-full' icon={faGraduationCap} />
-              <h2 className='text-4xl font-bold uppercase my-3'>Học vấn</h2>
-              <p>Đại Học Công Thương TPHCM <br></br> ( 2019 - 2024 )</p>
-            </div>
             <div className='text-white border border-transparent rounded-3xl shadow-md shadow-gray-500 p-4 content-center max-w-[400px] w-full text-center'>
               <Image src='/images/english.png' className='max-h-32 w-full object-contain' width={500} height={500} alt='Image'></Image>
               <h2 className='text-4xl font-bold uppercase my-3'>Tiếng Anh</h2>

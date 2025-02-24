@@ -1,3 +1,4 @@
+import Experient from "@/components/experient/Experient";
 import Content1 from "@/components/homepagecontent/Content1";
 import Content2 from "@/components/homepagecontent/Content2";
 import Info from "@/components/infomation/Info";
@@ -19,6 +20,9 @@ export default function Home() {
         </section>
         <section className="mt-16">
           <Info />
+        </section>
+        <section className="mt-16">
+          <Experient />
         </section>
       </main>
     </>
