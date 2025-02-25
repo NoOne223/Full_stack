@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow : {
+        'custom' : "15px 10px 0 black",
+      }
     },
     screens: {
       'sm' : '320px',

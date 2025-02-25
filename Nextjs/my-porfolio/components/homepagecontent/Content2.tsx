@@ -13,19 +13,19 @@ const Content2 = () => {
                     <p className='text-white text-4xl uppercase font-bold'>Thông tin cá nhân</p>
                 </div>
             </Link>
-            <Link className='relative max-h-[400px] card-content overflow-hidden rounded-xl' href='#info'>
+            <Link className='relative max-h-[400px] card-content overflow-hidden rounded-xl' href='#skill'>
                 <Image className='w-full h-full rounded-xl card-image' src='/images/skill.jpeg' width={500} height={500} alt='Link Image'/>
                 <div className='card-layout w-full h-full bg-black/50 absolute top-0 left-0 rounded-xl text-center content-center hidden'>
                     <p className='text-white text-4xl uppercase font-bold'>Kinh nghiệm & Kỹ năng</p>
                 </div>
             </Link>
-            <Link className='relative max-h-[400px] card-content overflow-hidden rounded-xl' href='#info'>
+            <Link className='relative max-h-[400px] card-content overflow-hidden rounded-xl' href='#project'>
                 <Image className='w-full h-full rounded-xl card-image' src='/images/project.jpeg' width={500} height={500} alt='Link Image'/>
                 <div className='card-layout w-full h-full bg-black/50 absolute top-0 left-0 rounded-xl text-center content-center hidden'>
                     <p className='text-white text-4xl uppercase font-bold'>Dự án</p>
                 </div>
             </Link>
-            <Link className='relative max-h-[400px] card-content overflow-hidden rounded-xl' href='#info'>
+            <Link className='relative max-h-[400px] card-content overflow-hidden rounded-xl' href='#contact'>
                 <Image className='w-full h-full rounded-xl card-image' src='/images/contact.jpeg' width={500} height={500} alt='Link Image'/>
                 <div className='card-layout w-full h-full bg-black/50 absolute top-0 left-0 rounded-xl text-center content-center hidden'>
                     <p className='text-white text-4xl uppercase font-bold'>Thông tin liên lạc</p>

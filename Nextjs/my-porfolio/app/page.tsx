@@ -1,4 +1,5 @@
 import Experient from "@/components/experient/Experient";
+import Skill from "@/components/experient/Skill";
 import Content1 from "@/components/homepagecontent/Content1";
 import Content2 from "@/components/homepagecontent/Content2";
 import Info from "@/components/infomation/Info";
@@ -18,11 +19,12 @@ export default function Home() {
         <section className="mt-16">
           <Content2 />
         </section>
-        <section className="mt-16">
+        <section id="info" className="mt-16">
           <Info />
         </section>
-        <section className="mt-16">
+        <section id="skill" className="mt-16">
           <Experient />
+          <Skill />
         </section>
       </main>
     </>
