@@ -1,3 +1,4 @@
+import Contact from "@/components/contact/Contact";
 import Experient from "@/components/experient/Experient";
 import Skill from "@/components/experient/Skill";
 import Content1 from "@/components/homepagecontent/Content1";
@@ -29,6 +30,9 @@ export default function Home() {
         </section>
         <section id="project" className="mt-16">
           <ComProjects />
+        </section>
+        <section id="contact" className="mt-16">
+          <Contact />
         </section>
       </main>
     </>
