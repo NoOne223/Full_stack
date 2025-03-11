@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 const Carousel = () => {
   return (
@@ -15,15 +15,13 @@ const Carousel = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
+        speed={1000}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="h-100"
+        modules={[Autoplay, Navigation]}
+        className="h-100 max-h-screen"
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
