@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Autoplay, Navigation } from 'swiper/modules';
+import Image from 'next/image';
 
 const Carousel = () => {
   return (
@@ -22,11 +23,17 @@ const Carousel = () => {
         speed={1000}
         navigation={true}
         modules={[Autoplay, Navigation]}
-        className="h-100 max-h-screen"
+        className="min-h-screen"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide className='h-screen w-full'>
+          <Image src='/images/slide-img1.png' width={500} height={500} alt='Slide Image'/>
+        </SwiperSlide>
+        <SwiperSlide className='h-screen w-full'>
+          <Image src='/images/slide-img2.png' width={500} height={500} alt='Slide Image'/>
+        </SwiperSlide>
+        <SwiperSlide className='h-screen w-full'>
+          <Image src='/images/slide-img3.png' width={500} height={500} alt='Slide Image'/>
+        </SwiperSlide>
       </Swiper>
     </>
   )
