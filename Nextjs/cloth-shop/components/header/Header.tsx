@@ -36,7 +36,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <FontAwesomeIcon className='cursor-pointer hover:text-secondary' icon={faCartShopping} />
+                  <FontAwesomeIcon className='cursor-pointer hover:text-secondary' icon={faCartShopping} /> 
                 </li>
                 <li>
                   <Button className=''>Tài khoản</Button>

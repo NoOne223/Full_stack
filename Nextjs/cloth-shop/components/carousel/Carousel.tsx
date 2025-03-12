@@ -13,7 +13,6 @@ const Carousel = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
         centeredSlides={true}
         autoplay={{
           delay: 3000,
@@ -21,18 +20,17 @@ const Carousel = () => {
         }}
         loop={true}
         speed={1000}
-        navigation={true}
         modules={[Autoplay, Navigation]}
-        className="min-h-screen"
+        className=""
       >
-        <SwiperSlide className='h-screen w-full'>
-          <Image src='/images/slide-img1.png' width={500} height={500} alt='Slide Image'/>
+        <SwiperSlide className='h-[calc(100vh-100px)]! w-full'>
+          <Image className='w-full h-full' src='/images/slide-img1.png' width={6914} height={3456} alt='Slide Image'/>
         </SwiperSlide>
-        <SwiperSlide className='h-screen w-full'>
-          <Image src='/images/slide-img2.png' width={500} height={500} alt='Slide Image'/>
+        <SwiperSlide className='h-[calc(100vh-100px)]! w-full'>
+          <Image className='w-full h-full' src='/images/slide-img2.png' width={6914} height={3456} alt='Slide Image'/>
         </SwiperSlide>
-        <SwiperSlide className='h-screen w-full'>
-          <Image src='/images/slide-img3.png' width={500} height={500} alt='Slide Image'/>
+        <SwiperSlide className='h-[calc(100vh-100px)]! w-full'>
+          <Image className='w-full h-full' src='/images/slide-img3.png' width={6914} height={3456} alt='Slide Image'/>
         </SwiperSlide>
       </Swiper>
     </>
