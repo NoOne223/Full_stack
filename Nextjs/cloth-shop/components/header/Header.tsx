@@ -6,6 +6,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import Button from '../buttons/Button'
+import LangChange from './LangChange'
 
 const Header = () => {
   const pathname = usePathname()
@@ -44,6 +45,9 @@ const Header = () => {
               </nav>
               <div>
                 <Button className='text-white'>Tài khoản</Button>
+              </div>
+              <div>
+                <LangChange />
               </div>
             </div>
           </div>
