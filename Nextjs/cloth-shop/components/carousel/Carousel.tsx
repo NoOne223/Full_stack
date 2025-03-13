@@ -23,14 +23,14 @@ const Carousel = () => {
         modules={[Autoplay, Navigation]}
         className=""
       >
-        <SwiperSlide className='h-[calc(100vh-100px)]! w-full'>
-          <Image className='w-full h-full' src='/images/slide-img1.png' width={6914} height={3456} alt='Slide Image'/>
+        <SwiperSlide className='2xl:h-[calc(100vh-100px)]! sm:h-100! w-full relative'>
+          <Image className='w-full h-full' src='/images/slide-img1.png' fill alt='Slide Image'/>
         </SwiperSlide>
-        <SwiperSlide className='h-[calc(100vh-100px)]! w-full'>
-          <Image className='w-full h-full' src='/images/slide-img2.png' width={6914} height={3456} alt='Slide Image'/>
+        <SwiperSlide className='2xl:h-[calc(100vh-100px)]! sm:h-100! w-full relative'>
+          <Image className='w-full h-full' src='/images/slide-img2.png' fill alt='Slide Image'/>
         </SwiperSlide>
-        <SwiperSlide className='h-[calc(100vh-100px)]! w-full'>
-          <Image className='w-full h-full' src='/images/slide-img3.png' width={6914} height={3456} alt='Slide Image'/>
+        <SwiperSlide className='2xl:h-[calc(100vh-100px)]! sm:h-100! w-full relative'>
+          <Image className='w-full h-full' src='/images/slide-img3.png' fill alt='Slide Image'/>
         </SwiperSlide>
       </Swiper>
     </>

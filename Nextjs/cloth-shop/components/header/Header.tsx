@@ -15,34 +15,37 @@ const Header = () => {
       <div className='container mx-auto p-3'>
           <div className='flex items-center justify-between'>
             <Image className='h-20 w-fit' src='/images/logo.png' height={500} width={500} alt='Logo'/>
-            <nav>
-              <ul className='text-white flex items-center gap-x-10'>
-                <li>
-                  <Link 
-                    className={`font-semibold hover:text-secondary ${pathname === '/' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/">
-                    Trang chủ
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    className={`font-semibold hover:text-secondary ${pathname === '/product' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/product">
-                    Sản phẩm
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    className={`font-semibold hover:text-secondary ${pathname === '/new' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/new">
-                    Hàng mới
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon className='cursor-pointer hover:text-secondary' icon={faCartShopping} /> 
-                </li>
-                <li>
-                  <Button className=''>Tài khoản</Button>
-                </li>
-              </ul>
-            </nav>
+            <div className='flex items-center gap-5'>
+              <nav>
+                <ul className='text-white flex items-center gap-x-10'>
+                  <li>
+                    <Link 
+                      className={`font-semibold hover:text-secondary ${pathname === '/' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/">
+                      Trang chủ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      className={`font-semibold hover:text-secondary ${pathname === '/product' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/product">
+                      Sản phẩm
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      className={`font-semibold hover:text-secondary ${pathname === '/new' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/new">
+                      Hàng mới
+                    </Link>
+                  </li>
+                  <li className='relative'>
+                    <FontAwesomeIcon className='cursor-pointer hover:text-secondary' icon={faCartShopping} />
+                    <span className='bg-thirdary text-secondary rounded-full w-5 h-5 text-center text-sm absolute -right-4.5 bottom-0 hidden'>1</span>
+                  </li>
+                </ul>
+              </nav>
+              <div>
+                <Button className='text-white'>Tài khoản</Button>
+              </div>
+            </div>
           </div>
       </div>
     </header>
