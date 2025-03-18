@@ -24,7 +24,7 @@
 }
 
 body {
-  @apply bg-primary text-xl;
+  @apply text-xl;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .sub-title{
-  @apply text-5xl text-thirdary;
+  @apply text-5xl text-primary;
 }
 
 .underline-thick{

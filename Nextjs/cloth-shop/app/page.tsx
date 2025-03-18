@@ -40,12 +40,12 @@ export default function Home() {
               </div>
             </div>
             <div className="w-1/2">
-              <Image className="w-full h-[700px] object-top object-cover rounded-2xl" src='/images/for-men.png' width={500} height={800} alt="content image"/>
+              <Image className="w-full h-[700px] object-top object-cover rounded-2xl shadow-2xl" src='/images/for-men.png' width={500} height={800} alt="content image"/>
             </div>
           </div>
           <div className="flex mt-16">
             <div className="w-1/2">
-              <Image className="w-full h-[700px] object-top object-cover rounded-2xl" src='/images/for-women.png' width={500} height={800} alt="content image"/>
+              <Image className="w-full h-[700px] object-top object-cover rounded-2xl shadow-2xl" src='/images/for-women.png' width={500} height={800} alt="content image"/>
             </div>
             <div className="w-1/2 text-start relative">
               <div className="flex flex-col justify-center gap-y-10 absolute top-0 -left-[110px] h-full">
@@ -64,6 +64,29 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="mt-16 bg-primary">
+        <div className="container mx-auto p-3">
+          <div className="flex">
+            <div className="w-1/2 grid grid-cols-2 gap-5">
+              <div className="border border-transparent bg-thirdary text-white p-5">
+                <h2>Top thịnh hành</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ad nostrum vitae, delectus rem beatae aperiam facilis animi quod molestiae impedit at 
+                  expedita nam, eum, illo natus ea explicabo? Architecto?
+                </p>
+              </div>
+              <div>
+                <h2>Phù hợp</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi commodi nihil enim harum quam nisi aut magni ut aliquid nobis 
+                  officia maiores molestiae recusandae, natus nostrum tempore fugit, ducimus dicta.
+                </p>
+              </div>
+            </div>
+            <div className="w-1/2"></div>
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
-import Button from '../buttons/Button'
+import Button from '../buttons/ModalButton'
 import LangChange from './LangChange'
 
 const Header = () => {
