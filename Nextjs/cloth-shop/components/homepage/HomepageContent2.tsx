@@ -28,7 +28,7 @@ const HomepageContent2 = () => {
             </p>
             </div>
             <div className="border border-transparent bg-thirdary text-primary p-5 content-center">
-            <h2 className="text-6xl capitalize">Trang thời trang hiện đại</h2>
+            <h2 className="text-6xl capitalize">thời trang hiện đại</h2>
             </div>
         </div>
         <div className="w-1/2 content-center">
