@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
-import Button from '../buttons/ModalButton'
+import ModalButton from '../buttons/ModalButton'
 import LangChange from './LangChange'
 
 const Header = () => {
@@ -44,7 +44,7 @@ const Header = () => {
                 </ul>
               </nav>
               <div>
-                <Button className='text-white'>Tài khoản</Button>
+                <ModalButton className='text-white'>Tài khoản</ModalButton>
               </div>
               <div>
                 <LangChange />

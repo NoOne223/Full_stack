@@ -7,21 +7,21 @@ const HomepageContent2 = () => {
         <div className="flex">
         <div className="w-1/2 grid grid-cols-2 gap-5">
             <div className="border border-transparent bg-thirdary text-primary p-5">
-            <h2 className="mb-4 text-3xl">Top thịnh hành</h2>
+            <h2 className="mb-6 text-3xl">Top thịnh hành</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ad nostrum vitae, delectus rem beatae aperiam facilis animi quod molestiae impedit at 
                 expedita nam, eum, illo natus ea explicabo? Architecto?
             </p>
             </div>
             <div className="border border-transparent bg-white text-primary p-5">
-            <h2 className="mb-4 text-3xl">Phù hợp</h2>
+            <h2 className="mb-6 text-3xl">Phù hợp</h2>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi commodi nihil enim harum quam nisi aut magni ut aliquid nobis 
                 officia maiores molestiae recusandae, natus nostrum tempore fugit, ducimus dicta.
             </p>
             </div>
             <div className="border border-transparent bg-white text-primary p-5">
-            <h2 className="mb-4 text-3xl">Xinh đẹp</h2>
+            <h2 className="mb-6 text-3xl">Xinh đẹp</h2>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi commodi nihil enim harum quam nisi aut magni ut aliquid nobis 
                 officia maiores molestiae recusandae, natus nostrum tempore fugit, ducimus dicta.

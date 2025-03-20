@@ -13,6 +13,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
+  --shadow-sm: 5px 0px 5px;
   --shadow-3xl: 0px 5px 5px;
 }
 
@@ -25,7 +26,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  @apply text-xl;
+  @apply text-lg;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .title{
-  @apply text-7xl text-secondary uppercase;
+  @apply text-6xl text-secondary uppercase;
 }
 
 .sub-title{

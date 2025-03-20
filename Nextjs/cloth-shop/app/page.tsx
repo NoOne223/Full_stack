@@ -4,6 +4,7 @@ import Header from "@/components/header/Header";
 import HomepageContent1 from "@/components/homepage/HomepageContent1";
 import HomepageContent2 from "@/components/homepage/HomepageContent2";
 import HomepageContent3 from "@/components/homepage/HomepageContent3";
+import HomepageContent4 from "@/components/homepage/HomepageContent4";
 import { Metadata } from "next";
 
 
@@ -27,6 +28,9 @@ export default function Home() {
       </section>
       <section className="mt-16">
         <HomepageContent3 />
+      </section>
+      <section className="mt-16">
+        <HomepageContent4 />
       </section>
     </main>
     <Footer />

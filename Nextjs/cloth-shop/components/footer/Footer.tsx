@@ -1,25 +1,32 @@
+import Image from 'next/image'
 import React from 'react'
+import ModalButton from '../buttons/ModalButton'
 
 const Footer = () => {
   return (
-    <footer className='h-full relative'>
-        <div className='flex min-h-[50vh]'>
-            <div className='w-1/2'></div>
-            <div className='w-1/2 bg-primary'></div>
-        </div>
-        <div className='container m-auto p-3 absolute top-0 left-0 right-0 bottom-0 h-fit'>
-            <div className='flex'>
-                <div className='w-1/2 pr-5'>
-                    <h2 className='text-5xl uppercase'>Cảm ơn bạn !</h2>
-                    <p className='my-6'>
-                        Cảm ơn bạn đã ghé thăm trang của chúng tôi, hy vọng các sản phẩm của chúng tôi mang lại sẽ làm hài lòng các bạn. Đối với những khách hàng mới, chúng tôi mong muốn một ngày nào đó cũng sẽ được phục vụ quý vị ! 
-                    </p>
-                </div>
-                <div className='w-1/2 px-5'>
-                    <h2 className='text-5xl uppercase text-thirdary'>Hello</h2>
-                </div>
+    <footer className='mt-16'>
+       <div className='container mx-auto p-3 bg-[url(/images/banner.png)] bg-cover bg-no-repeat min-h-[900px] content-center'>
+        <h2 className='uppercase text-6xl text-center'>Đóng góp và phản hồi</h2>
+        <div className='flex justify-center gap-x-10 mt-6'>
+            <div className='bg-white shadow-2xl rounded-xl p-5 max-w-[450px]'>
+                <h3 className='sub-title'>Đánh giá</h3>
+                <p className='my-6'>
+                    Từng đánh giá công tâm của quý khách đều có thể giúp cửa hàng của em phát triển hơn. Do đó xin mọi người hãy để lại đánh giá thật lòng nhất giúp em.
+                </p>
+                <ModalButton className='bg-secondary text-white'>Đánh giá</ModalButton>
+            </div>
+            <div className='bg-white shadow-2xl rounded-xl p-5 max-w-[450px]'>
+                <h3 className='sub-title'>Phản hồi</h3>
+                <p className='my-6'>
+                Nếu quý khách chưa hài lòng về sản phẩm, thái độ phục vụ xin hãy để lại phản hồi để cửa hàng xử lí.
+                </p>
+                <ModalButton className='bg-secondary text-white'>Phản hồi</ModalButton>
             </div>
         </div>
+       </div>
+       <div className='p-3 shadow-sm bg-primary shadow-secondary'>
+        <p className='text-center text-white'>Copyright © 2025 THE Blazer.</p>
+       </div>
     </footer>
   )
 }
