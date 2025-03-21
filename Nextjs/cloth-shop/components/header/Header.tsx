@@ -12,7 +12,7 @@ const Header = () => {
   const pathname = usePathname()
   
   return (
-    <header className='shadow-2xl sticky top-0 w-full z-50 bg-primary'>
+    <header className='shadow-2xl sticky top-0 w-full z-30 bg-primary'>
       <div className='container mx-auto p-3'>
           <div className='flex items-center justify-between'>
             <Image className='h-20 w-fit' src='/images/logo.png' height={500} width={500} alt='Logo'/>
