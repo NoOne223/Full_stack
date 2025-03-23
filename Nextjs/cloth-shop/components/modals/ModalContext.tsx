@@ -1,5 +1,7 @@
 'use client'
-import { createContext, useContext, useState, ReactNode, useEffect } from "react";
+import { createContext, useContext, useState, ReactNode } from "react";
+import LoginModal from "./LoginModal";
+import AccountModal from "./AccountModal";
 
 interface ModalContextType {
   activeModal: string | null;
@@ -29,9 +31,21 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
     }, 200);
   };
 
+  const renderModal = () => {
+    switch (activeModal) {
+      case "LoginModal":
+        return <LoginModal modalId="LoginModal" />;
+      case "AccountModal":
+        return <AccountModal modalId="AccountModal" />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <ModalContext.Provider value={{ activeModal, fadeClass, openModal, closeModal }}>
       {children}
+      {renderModal()}
     </ModalContext.Provider>
   );
 };

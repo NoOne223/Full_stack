@@ -5,7 +5,6 @@ import HomepageContent1 from "@/components/homepage/HomepageContent1";
 import HomepageContent2 from "@/components/homepage/HomepageContent2";
 import HomepageContent3 from "@/components/homepage/HomepageContent3";
 import HomepageContent4 from "@/components/homepage/HomepageContent4";
-import LoginModal from "@/components/modals/LoginModal";
 import { Metadata } from "next";
 
 
@@ -35,7 +34,6 @@ export default function Home() {
       </section>
     </main>
     <Footer />
-    <LoginModal modalId="LoginModal"/>
    </>
   );
 }

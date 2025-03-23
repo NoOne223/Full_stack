@@ -1,0 +1,24 @@
+{
+    "Users": [
+        {
+            "id": "1",
+            "user_name": "JohnSon123",
+            "password": "123456789",
+            "email": "johnson@gmail.com",
+            "name": "John",
+            "birthday": "03/09/2001",
+            "gender": "Male",
+            "point": "100 pts"
+        },
+        {
+            "id": "2",
+            "user_name": "JoeSaul456",
+            "password": "987654321",
+            "email": "joesaul@gmail.com",
+            "name": "Joe Saul",
+            "birthday": "12/08/2001",
+            "gender": "Female",
+            "point": "500 pts"
+        }
+    ]
+}

@@ -4,6 +4,7 @@ import ControlLogin from '../buttons/ControlLogin'
 import Image from 'next/image'
 import CloseModal from '../buttons/CloseModal'
 import { useModal } from './ModalContext'
+import SecondaryButton from '../buttons/SecondaryButton'
 
 interface ModalProps {
   modalId: string;
@@ -28,7 +29,11 @@ const LoginModal = ({ modalId }: ModalProps) => {
           <label className='text-gray-500 font-semibold'>Mật khẩu</label>
           <input className='w-full border border-gray-400 rounded-xs p-2'></input>
         </div>
-        <button className='mt-3 text-blue-400 cursor-pointer hover:underline'>Đăng ký tài khoản</button>
+        <div>
+          <button className='mt-3 text-blue-400 cursor-pointer hover:underline'>Đăng ký tài khoản</button>
+          <button className='mt-3 text-blue-400 cursor-pointer hover:underline float-end'>Quên mật khẩu</button>
+        </div>
+        <SecondaryButton className='mt-5'>Đăng nhập</SecondaryButton>
         <p className='font-semibold text-center my-6'>Hoặc</p>
         <ControlLogin />
         <CloseModal className='px-5 py-2 w-full mt-2 hover:bg-gray-300 hover:text-gray-700 rounded-sm'>Đóng</CloseModal>

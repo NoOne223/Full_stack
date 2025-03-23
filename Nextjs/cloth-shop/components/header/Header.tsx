@@ -33,8 +33,8 @@ const Header = () => {
                   </li>
                   <li>
                     <Link 
-                      className={`font-semibold hover:text-secondary ${pathname === '/new' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/new">
-                      Hàng mới
+                      className={`font-semibold hover:text-secondary ${pathname === '/news' ? 'text-secondary underline underline-offset-8 underline-thick' : ''}`} href="/news">
+                      Tin tức
                     </Link>
                   </li>
                   <li className='relative'>
