@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import { useModal } from '../modals/ModalContext';
 
 interface CloseModalProps {
@@ -8,12 +8,6 @@ interface CloseModalProps {
 }
 const CloseModal:React.FC<CloseModalProps> = ( {className, children} ) => {
   const { closeModal } = useModal();
-  const [,setFadeClass] = useState('');
-  
-  const handleClose = () => {
-    setFadeClass('fade-out');
-    setTimeout(() => closeModal(), 300);
-  };
 
   return (
     <button 

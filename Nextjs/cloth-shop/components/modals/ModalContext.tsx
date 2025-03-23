@@ -1,8 +1,9 @@
 'use client'
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode, useEffect } from "react";
 
 interface ModalContextType {
   activeModal: string | null;
+  fadeClass: string;
   openModal: (id: string) => void;
   closeModal: () => void;
 }
@@ -11,12 +12,25 @@ const ModalContext = createContext<ModalContextType | undefined>(undefined);
 
 export const ModalProvider = ({ children }: { children: ReactNode }) => {
   const [activeModal, setActiveModal] = useState<string | null>(null);
+  const [fadeClass,setFadeClass] = useState('');
 
-  const openModal = (id: string) => setActiveModal(id);
-  const closeModal = () => setActiveModal(null);
+  const openModal = (id: string) => {
+    setActiveModal(id);
+    setFadeClass('fade-in');
+    document.documentElement.classList.add('overflow-hidden');
+  };
+
+  const closeModal = () => {
+    setFadeClass('fade-out');
+    setTimeout(() => {
+      setActiveModal(null);
+      setFadeClass('');
+      document.documentElement.classList.remove('overflow-hidden');
+    }, 200);
+  };
 
   return (
-    <ModalContext.Provider value={{ activeModal, openModal, closeModal }}>
+    <ModalContext.Provider value={{ activeModal, fadeClass, openModal, closeModal }}>
       {children}
     </ModalContext.Provider>
   );
