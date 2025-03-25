@@ -2,7 +2,7 @@ import React from 'react'
 
 interface SecondaryButtonProps {
     className: string;
-    children: string;
+    children: React.ReactNode;
 }
 
 const SecondaryButton:React.FC<SecondaryButtonProps> = ( {className, children} ) => {

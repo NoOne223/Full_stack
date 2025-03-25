@@ -4,16 +4,21 @@ import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headless
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretDown, faCheck } from '@fortawesome/free-solid-svg-icons'
 
+interface OptionType {
+    id: number;
+    name: string;
+}
+
 interface ListSelectProps {
-    options: any;
-    selected: any;
+    options: OptionType[];
+    selected: OptionType;
     onChange: any;
 }
 
 const ListSelect:React.FC<ListSelectProps> = ({ options, selected, onChange }) => {
     return (
         <Listbox value={selected} onChange={onChange}>
-            <ListboxButton className='py-0.5 px-1 rounded-sm cursor-pointer min-w-[120px] flex items-center justify-between text-base bg-primary text-white'>
+            <ListboxButton className='py-0.5 px-1 rounded-sm cursor-pointer min-w-[120px] flex items-center justify-between text-base bg-primary text-white gap-x-5'>
                 {selected.name}<FontAwesomeIcon icon={faCaretDown} />
             </ListboxButton>
             <ListboxOptions className='shadow-2xl rounded-sm bg-white min-w-[200px]' anchor="bottom">
