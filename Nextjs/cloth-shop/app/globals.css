@@ -104,3 +104,12 @@ h1, h2, h3, h4, h5, h6{
 	-webkit-animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: fade-out-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+.show-img, .hide-img {
+  transition: left 0.5s ease-out, right 0.5s ease-out;
+}
+.img-area:hover .show-img{
+  left: -500px;
+}
+.img-area:hover .hide-img{
+  right: 0px;
+}

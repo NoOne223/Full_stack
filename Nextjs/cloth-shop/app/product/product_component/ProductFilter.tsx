@@ -38,7 +38,7 @@ const ProductFilter = () => {
                 onChange={setSelectedProduct}
                 />
               </div>
-              <div className='flex items-center gap-x-2'>
+              <div className='flex items-center gap-x-2 justify-center'>
                 <label className='text-base'>Danh mục</label>
                 <ListSelect  
                 options={category}
@@ -46,7 +46,7 @@ const ProductFilter = () => {
                 onChange={setSelectedCategory}
                 />
               </div>
-              <div className='flex items-center gap-x-2'>
+              <div className='flex items-center gap-x-2 justify-center'>
                 <label className='text-base'>Giá</label>
                 <ListSelect  
                 options={price}
@@ -54,7 +54,7 @@ const ProductFilter = () => {
                 onChange={setSelectedPrice}
                 />
               </div>
-              <div>
+              <div className='flex-auto'>
                 <SearchBar />
               </div>
           </div>

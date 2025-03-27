@@ -18,10 +18,6 @@ const LoginModal = ({ modalId }: ModalProps) => {
   return (
     <div id='LoginModal' className='fixed top-0 left-0 w-full h-full bg-black/50 z-40'>
       <div className={`bg-white p-5 max-w-[400px] w-full h-fit absolute top-0 left-0 right-0 bottom-0 m-auto rounded-xl ${fadeClass}`}>
-        <div>
-          <Image className='mx-auto' src='/images/profile.png' width={100} height={100} alt='User avt'/>
-          <p className='font-bold text-2xl text-center mt-2'>User name</p>
-        </div>
         <p className='text-red-500 italic text-base my-3 hidden'>Tài khoản hoặc mật khẩu không đúng !</p>
         <div>
           <label className='text-gray-500 font-semibold'>Tài khoản</label>

@@ -3,6 +3,7 @@ import Header from '@/components/header/Header';
 import { Metadata } from 'next';
 import React from 'react';
 import ProductFilter from './product_component/ProductFilter';
+import ProductInfo from './product_component/ProductInfo';
 
 export const metadata: Metadata = {
     title: 'Product',
@@ -15,6 +16,7 @@ export default function Home() {
             <Header />
             <main>
                 <ProductFilter />
+                <ProductInfo />
             </main>
             <Footer />
         </>
