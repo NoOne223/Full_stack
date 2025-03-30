@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'This is product page'
 }
 
-export default function Home() {
+export default function Product() {
     return (
         <>
             <Header />
