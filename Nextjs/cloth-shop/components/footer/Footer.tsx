@@ -13,14 +13,14 @@ const Footer = () => {
                 <p className='my-6'>
                     Từng đánh giá công tâm của quý khách đều có thể giúp cửa hàng của em phát triển hơn. Do đó xin mọi người hãy để lại đánh giá thật lòng nhất giúp em.
                 </p>
-                <ModalButton modalId='' className='bg-secondary text-white'>Đánh giá</ModalButton>
+                <ModalButton modalId='' className='bg-secondary text-white rounded-full'>Đánh giá</ModalButton>
             </div>
             <div className='bg-white shadow-2xl rounded-xl p-5 max-w-[450px]'>
                 <h3 className='sub-title'>Phản hồi</h3>
                 <p className='my-6'>
                 Nếu quý khách chưa hài lòng về sản phẩm, thái độ phục vụ xin hãy để lại phản hồi để cửa hàng xử lí.
                 </p>
-                <ModalButton modalId='' className='bg-secondary text-white'>Phản hồi</ModalButton>
+                <ModalButton modalId='' className='bg-secondary text-white rounded-full'>Phản hồi</ModalButton>
             </div>
         </div>
        </div>

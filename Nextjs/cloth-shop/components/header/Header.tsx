@@ -44,7 +44,7 @@ const Header = () => {
                 </ul>
               </nav>
               <div>
-                <ModalButton modalId='LoginModal' className='text-white'>Tài khoản</ModalButton>
+                <ModalButton modalId='LoginModal' className='text-white rounded-full border-white'>Tài khoản</ModalButton>
               </div>
               <div>
                 <LangChange />
