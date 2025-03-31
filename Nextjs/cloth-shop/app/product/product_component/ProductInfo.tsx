@@ -5,6 +5,10 @@ const ProductInfo = () => {
   return (
     <section className='mt-16'>
         <div className='container mx-auto p-3'>
+            <div className='flex items-end gap-x-2 mb-6 border-b-2 border-primary pb-6'>
+                <h2 className='sub-title'>Tất cả sản phẩm</h2>
+                <p>( 122 sản phẩm )</p>
+            </div>
             <div className="grid grid-cols-4">
                 <div className='overflow-hidden shadow-2xl'>
                     <div className='img-area flex relative h-[300px]'>

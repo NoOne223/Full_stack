@@ -1,7 +1,7 @@
 'use client'
 import ListSelect from '@/components/filter/ListSelect'
 import SearchBar from '@/components/filter/SearchBar';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const product = [
   { id: 1, name: "Tất cả" },
@@ -28,7 +28,7 @@ const ProductFilter = () => {
 
   return (
     <section className='mt-16'>
-        <div className='container mx-auto p-3 bg-white rounded-sm shadow-3xl shadow-black/30 sticky top-0'>
+        <div className='container mx-auto p-3 bg-white rounded-sm shadow-3xl shadow-black/30'>
           <div className='flex gap-x-10 justify-center'>
             <div className='flex items-center gap-x-2'>
                 <label className='text-base'>Sản phẩm</label>
