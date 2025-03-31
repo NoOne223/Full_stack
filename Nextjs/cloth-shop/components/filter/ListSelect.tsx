@@ -21,7 +21,7 @@ const ListSelect:React.FC<ListSelectProps> = ({ options, selected, onChange }) =
             <ListboxButton className='py-0.5 px-2 rounded-sm cursor-pointer min-w-[120px] flex items-center justify-between text-base bg-primary text-white gap-x-5'>
                 {selected.name}<FontAwesomeIcon icon={faCaretDown} />
             </ListboxButton>
-            <ListboxOptions className='shadow-2xl rounded-sm bg-white min-w-[200px]' anchor="bottom">
+            <ListboxOptions className='shadow-2xl rounded-sm bg-white min-w-[200px] z-20' anchor="bottom">
             {options.map((option) => (
                 <ListboxOption key={option.id} value={option} 
                 className="data-[focus]:bg-thirdary data-[focus]:text-white cursor-pointer p-2 group flex items-center justify-between text-base">

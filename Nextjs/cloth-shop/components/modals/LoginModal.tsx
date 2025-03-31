@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import ControlLogin from '../buttons/ControlLogin'
-import Image from 'next/image'
 import CloseModal from '../buttons/CloseModal'
 import { useModal } from './ModalContext'
 import SecondaryButton from '../buttons/SecondaryButton'
@@ -16,7 +15,7 @@ const LoginModal = ({ modalId }: ModalProps) => {
   if (activeModal !== modalId) return null;
 
   return (
-    <div id='LoginModal' className='fixed top-0 left-0 w-full h-full bg-black/50 z-40'>
+    <div className='fixed top-0 left-0 w-full h-full bg-black/50 z-40'>
       <div className={`bg-white p-5 max-w-[400px] w-full h-fit absolute top-0 left-0 right-0 bottom-0 m-auto rounded-xl ${fadeClass}`}>
         <p className='text-red-500 italic text-base my-3 hidden'>Tài khoản hoặc mật khẩu không đúng !</p>
         <div>
