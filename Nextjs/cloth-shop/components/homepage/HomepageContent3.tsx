@@ -4,6 +4,7 @@ import { faCalendarDays, faClock, faEnvelope, faLocationDot, faPhone } from "@fo
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import ModalButton from '../buttons/ModalButton';
 
 const HomepageContent3 = () => {
   return (
@@ -55,44 +56,21 @@ const HomepageContent3 = () => {
             </div>
         </div>
         <div className="relative">
-            <h2 className="sub-title mb-6">Liên hệ chúng tôi</h2>
-            <ul className="text-primary">
-                <li className="py-2">
-                    <FontAwesomeIcon icon={faClock} />
-                    <span className="ms-2">8:00 - 21:00</span>
-                </li>
-                <li className="py-2">
-                    <FontAwesomeIcon icon={faCalendarDays} />
-                    <span className="ms-2">Thứ 2 - Thứ 7</span>
-                </li>
-                <li className="py-2">
-                    <Link href='tel:'>
-                    <FontAwesomeIcon icon={faPhone} />
-                    <span className="ms-2">0982582754</span>
-                    </Link>
-                </li>
-                <li className="py-2">
-                    <Link href='mailto:'>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <span className="ms-2">example_email@gmail.com</span>
-                    </Link>
-                </li>
-                <li className="py-2">
-                    <h3>Branch 1</h3>
-                    <FontAwesomeIcon icon={faLocationDot} />
-                    <span className="ms-2">787 street, Hai Ba Trung Ward , District 1, Ho Chi Minh City</span>
-                </li>
-                <li className="py-2">
-                    <h3>Branch 2</h3>
-                    <FontAwesomeIcon icon={faLocationDot} />
-                    <span className="ms-2">787 street, Hai Ba Trung Ward , District 1, Ho Chi Minh City</span>
-                </li>
-                <li className="py-2">
-                    <h3>Branch 3</h3>
-                    <FontAwesomeIcon icon={faLocationDot} />
-                    <span className="ms-2">787 street, Hai Ba Trung Ward , District 1, Ho Chi Minh City</span>
-                </li>
-            </ul>
+            <h2 className="sub-title mb-6">Đóng góp và phản hồi</h2>
+            <div>
+                <h3 className='text-2xl'>Đánh giá</h3>
+                <p>
+                    Từng đánh giá công tâm của quý khách đều có thể giúp cửa hàng của em phát triển hơn. Do đó xin mọi người hãy để lại đánh giá thật lòng nhất giúp em.
+                </p>
+                <ModalButton modalId='' className='bg-secondary text-white rounded-full mt-3'>Đánh giá</ModalButton>
+            </div>
+            <div className='mt-6'>
+                <h3 className='text-2xl'>Phản hồi</h3>
+                <p>
+                Nếu quý khách chưa hài lòng về sản phẩm, thái độ phục vụ xin hãy để lại phản hồi để cửa hàng xử lí.
+                </p>
+                <ModalButton modalId='' className='bg-secondary text-white rounded-full mt-3'>Phản hồi</ModalButton>
+            </div>
             <div className="bg-secondary absolute bottom-0 right-0 h-40 w-3"></div>
         </div>
         </div>

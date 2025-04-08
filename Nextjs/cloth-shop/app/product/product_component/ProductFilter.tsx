@@ -25,9 +25,30 @@ const ProductFilter = () => {
   const [selectedProduct, setSelectedProduct] = useState(product[0]);
   const [selectedCategory, setSelectedCategory] = useState(category[0]);
   const [selectedPrice, setSelectedPrice] = useState(price[0]);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <section className='mt-16'>
+    <section className={`mt-16 fixed top-24 left-0 z-20 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-[300px]'}`}>
         <div className='container mx-auto p-3 bg-white rounded-sm shadow-3xl shadow-black/30'>
           <div className='flex gap-x-10 justify-center'>
             <div className='flex items-center gap-x-2'>

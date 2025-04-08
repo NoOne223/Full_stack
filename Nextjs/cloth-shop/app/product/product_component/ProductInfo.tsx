@@ -6,7 +6,7 @@ import React from 'react'
 
 const ProductInfo = () => {
   return (
-    <section className='mt-16'>
+    <section className='mt-44'>
         <div className='container mx-auto p-3'>
             <div className='border-b-2 border-primary pb-6'>
                 <h2 className='sub-title'>Tất cả sản phẩm <span className='text-black text-xl'>( 122 sản phẩm )</span></h2>
