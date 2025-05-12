@@ -1,6 +1,5 @@
 import { faBookOpen, faCakeCandles, faCode, faHeadphones, faLanguage, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
 import React from 'react'
 
 const Infomation = () => {
