@@ -25,7 +25,7 @@ const ChangeLang = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-gray-100 to-gray-300 p-3 rounded-2xl overflow-hidden w-fit flex flex-col absolute top-0 left-0 hidden">
+    <div className="bg-gradient-to-r from-gray-100 to-gray-300 p-3 rounded-2xl overflow-hidden w-fit absolute top-0 left-0 hidden">
       <button
         className="cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
