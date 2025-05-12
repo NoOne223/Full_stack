@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Metadata } from 'next'
 import Header from "@/components/header/Header";
 import { config } from "@fortawesome/fontawesome-svg-core";

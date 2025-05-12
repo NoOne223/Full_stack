@@ -26,7 +26,7 @@ const Infomation = () => {
             <div className='md:w-1/3 p-3'>
               <h4 className='font-bold text-4xl mb-6'>Châm ngôn yêu thích</h4>
               <p className='italic'>
-                "Một nụ cười có thể thay cách nhìn một con người, một cái ôm có thể có một thay lời cảm thông, một lời nói có thể cứu vãn cả một người."
+                &quot;Một nụ cười có thể thay cách nhìn một con người, một cái ôm có thể có một thay lời cảm thông, một lời nói có thể cứu vãn cả một người.&quot;
               </p>
             </div>
             <div className='md:w-1/3 p-3'>
